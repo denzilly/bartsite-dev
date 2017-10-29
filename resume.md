@@ -1,6 +1,6 @@
 ---
 layout: resume
 title: Resume
-menu: true
+menu: false
 order: 4
 ---

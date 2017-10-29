@@ -1,9 +1,9 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-qwtel:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+Bart:
+  name:              Bart Timmer
+  email:             btimmer313@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -16,18 +16,18 @@ qwtel:
 
   # This photo will be used in the about section
   picture:
-    src:             https://placehold.it/128x128
+    src:             /hydejack/assets/img/facemed.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+      1x:            /hydejack/assets/img/facemed.png
+      2x:            /hydejack/assets/img/facemed.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
     # facebook:        <username>
-    twitter:         <username>
+    #twitter:         <username>
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
@@ -50,7 +50,7 @@ qwtel:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          <username>
+    #github:          <username>
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
@@ -61,8 +61,8 @@ qwtel:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:<mail@domain.tld>
-    rss:             https://<url>/feed.xml
+    email:           mailto:btimmer313@gmail.com
+    #rss:             https://<url>/feed.xml
 
 # Another author
 mdo:
