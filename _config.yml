@@ -29,14 +29,14 @@ image:               /hydejack/assets/img/nap.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
-font_heading:        "'Merriweather-Sans', Helvetica, Arial, sans-serif"
+font_heading:        "'Roboto Slab', Helvetica, Arial, sans-serif"
 
 # The text font. Expects a string that is a valid CSS font-family value.
 font:                "'Noto Sans', Helvetica, Arial, sans-serif"
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        Merriweather+Sans|Noto+Sans:400,400i,700,700i
+google_fonts:        Roboto+Slab|Noto+Sans:400,400i,700,700i
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
