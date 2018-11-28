@@ -2,18 +2,18 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Bart Timmer
+title:               Bort Tommer
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://qwtel.com
+url:                 https://denzilly.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             /hydejack
+baseurl:   ''
 
 # A very short description of your page
-tagline:             A pretentious two-column Jekyll theme.
+tagline:             A page about me and my stuff.
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -50,7 +50,7 @@ google_analytics:    <UA-XXXXXXXX-X>
 disqus_shortname:    <username>
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; Bart Timmer 2017. All rights reserved.'
+copyright:           '&copy; Bart Timmer 2018. All rights reserved.'
 
 # Format of the permalinks
 permalink:           pretty

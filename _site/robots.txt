@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/hydejack/sitemap.xml
+Sitemap: https://denzilly.github.io/sitemap.xml

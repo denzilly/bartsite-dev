@@ -8,6 +8,7 @@ GEM
     colorator (1.1.0)
     fast-stemmer (1.0.2)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.5.1)
       addressable (~> 2.4)
@@ -59,6 +60,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   classifier-reborn (~> 2.1)
@@ -72,4 +74,4 @@ DEPENDENCIES
   jekyll-sitemap (~> 1.0)
 
 BUNDLED WITH
-   1.15.3
+   1.17.1
