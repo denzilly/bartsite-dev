@@ -1,206 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://denzilly.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://denzilly.github.io/" rel="alternate" type="text/html" /><updated>2018-11-28T23:36:32+01:00</updated><id>https://denzilly.github.io/</id><title type="html">Bort Tommer</title><subtitle>What am I doing?
-</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Gems! (v6.5)</title><link href="https://denzilly.github.io/2017/07/27/gems/" rel="alternate" type="text/html" title="Gems! (v6.5)" /><published>2017-07-27T00:00:00+02:00</published><updated>2017-07-27T00:00:00+02:00</updated><id>https://denzilly.github.io/2017/07/27/gems</id><content type="html" xml:base="https://denzilly.github.io/2017/07/27/gems/">&lt;p&gt;This maintenance release includes various quality-of-life improvements,
-especially when using the gem-based version of the theme.
-These changes come in handy when using Hydejack for a quick (project-) page:
-The &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; layout, which is used when using &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;,
-is now a proper layout that displays a few posts/pages below the regular content,
-and it is again possible to define an author in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;
-without setting up a &lt;code class=&quot;highlighter-rouge&quot;&gt;_data&lt;/code&gt; directory (for more, see blow).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="https://denzilly.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://denzilly.github.io/" rel="alternate" type="text/html" /><updated>2018-12-09T17:16:07+01:00</updated><id>https://denzilly.github.io/</id><title type="html">Bartnet</title><subtitle>You've heard of skynet, now enter the bartnet.</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Slaying the top 2000</title><link href="https://denzilly.github.io/2018/12/08/Slayer/" rel="alternate" type="text/html" title="Slaying the top 2000" /><published>2018-12-08T00:00:00+01:00</published><updated>2018-12-08T00:00:00+01:00</updated><id>https://denzilly.github.io/2018/12/08/Slayer</id><content type="html" xml:base="https://denzilly.github.io/2018/12/08/Slayer/">&lt;p&gt;For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably,
+last year’s edition was listened to by &lt;strong&gt;11.3&lt;/strong&gt; million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address drew a mere 1-1.5 million viewers.&lt;/p&gt;
 
-&lt;p&gt;Version 6.5 also includes smaller design adjustments.
-Most notably, the default font is now Noto Sans.
-With the benefit of hindsight,
-using a serif font in combination with the slab headings feels more like a bug in the design than anything else.
-However, should you be happy with Noto Serif (the previous default font), there is no need to worry
-— this only effects the default setting.&lt;/p&gt;
+&lt;p&gt;pic of willem&lt;/p&gt;
 
-&lt;p&gt;For the full patch notes, read on.&lt;/p&gt;
+&lt;p&gt;The mere suggestion of manipulating the results of this list drew a good friend to describe it as a sacred national institution, and that anything of the sort would be akin to high treason.&lt;/p&gt;
 
-&lt;h2 id=&quot;patch-notes&quot;&gt;Patch Notes&lt;/h2&gt;
-&lt;h3 id=&quot;added&quot;&gt;Added&lt;/h3&gt;
+&lt;p&gt;Don’t get me wrong, the idea behind the top 2000 is pretty compelling and wholesome, but to be frank, the top of this list has met with little variation since it’s inception. Indeed, anyone who knows anything about this list, knows that Queen’s &lt;em&gt;Bohemian Rhapsody&lt;/em&gt; has been in the number 1 spot almost every single time, otherwise taking second place. This being the crown jewel of repetition, the top 10 is otherwise populated by songs that you also loved to hear, the first 14 times you heard them. Such hotel-lobby bangers as &lt;em&gt;Hotel California&lt;/em&gt;, &lt;em&gt;Piano Man&lt;/em&gt;, and &lt;em&gt;November Rain&lt;/em&gt; all tend to come back, year after year.&lt;/p&gt;
+
+&lt;p&gt;Enter Slayer. A band whose reputation precedes it as one of the heaviest, fastest, and most sonically abraisive acts in modern music. Celebrated by metalheads of all cultures and origins as one of the groups to have established the thrash metal movement, their music has arguably inspired an entire generation of musicians, and united lovers of heavy music all over the globe.&lt;/p&gt;
+
+&lt;p&gt;Why not try and take the #1 spot away from Freddie, and see if we could celebrate everything Slayer has done in the year that they choose to hang up their guitars?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-plan&quot;&gt;The Plan&lt;/h2&gt;
+
+&lt;p&gt;There are arguably several different ways to approach this problem–&lt;/p&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="slayer" /><summary type="html">For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably, last year’s edition was listened to by 11.3 million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address drew a mere 1-1.5 million viewers.</summary></entry><entry><title type="html">Bartnet, and how it works</title><link href="https://denzilly.github.io/2018/11/30/origins/" rel="alternate" type="text/html" title="Bartnet, and how it works" /><published>2018-11-30T00:00:00+01:00</published><updated>2018-11-30T00:00:00+01:00</updated><id>https://denzilly.github.io/2018/11/30/origins</id><content type="html" xml:base="https://denzilly.github.io/2018/11/30/origins/">&lt;p&gt;Putting aside the ‘how’ for a second, why does this page exist? Why do blogs exist at all? Is it really necessary for every single person to air out their metaphorical dirty laundry on the internet, for all to see?&lt;/p&gt;
+
+&lt;p&gt;Surely enlightenment can be sought elsewhere, from sources more credible than the recalcitrant braincells that choose to always sit at the back of the bus. Instead, you could read a book or newspaper, or perhaps even attempt to decipher a dirty handkerchief.&lt;/p&gt;
+
+&lt;p&gt;A power inside compels us, for whatever reason, to share our experiences with the world; some to teach, some to persuade, and some to entertain.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-it-works&quot;&gt;How it works&lt;/h2&gt;
+
+&lt;p&gt;This site is run using &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, a simple site generation platform written in ruby, that works great for static sites such as blogs. While being easy to use and update, one of the best features is arguably that you can host a website in one click on Github Pages, as they offer a built in Jekyll page builder.&lt;/p&gt;
+
+&lt;p&gt;Credit where credit is due, styling of this page is run off of a template called &lt;a href=&quot;https://hydejack.com&quot;&gt;&lt;em&gt;Hydejack&lt;/em&gt;&lt;/a&gt;, made by the talented qwtel.&lt;/p&gt;
+
+&lt;p&gt;The page is run out of two repositories, one for development and one for deployment, so that it can be edited from virtually anywhere as long as I have access to the internet.&lt;/p&gt;
+
+&lt;p&gt;The development repository contains everything needed to build the site, including all markdown files, stylesheets, javascript etc. The static site files are generated using these, and then moved to the deployment repository which houses just the generated static site files. Github automatically builds and hosts the site from the static files.&lt;/p&gt;
+
+&lt;p&gt;Ideas for posts:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Hydejack now uses additional Jekyll plugins by default, which make working with GitHub more convenient.
-They have been added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.
-Note that existing users need to update their &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
-
-    &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-default-layout&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# new&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-feed&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-optional-front-matter&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# new&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-paginate&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-redirect-from&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-relative-links&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# new&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-sitemap&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;licenses&lt;/code&gt; folder that includes the full license texts of licenses mentioned in &lt;code class=&quot;highlighter-rouge&quot;&gt;NOTICE.md&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You can, once again, define the author in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.
-Using &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/authors.yml&lt;/code&gt; is still recommended (and takes precedence),
-but this option is more convenient when setting up a quick (project-) page using the gem-based theme.
-Also, a mini-version of &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/social.yml&lt;/code&gt; can be provided as part &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, e.g.:&lt;/p&gt;
-
-    &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;social&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/qwtel/hydejack&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;npm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://www.npmjs.com/package/hydejack&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://github.com/qwtel/hydejack/archive/v6.6.1.zip&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;data_social&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;GitHub&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;icon-github&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;npm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;npm&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;icon-npm&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Download&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;icon-box-add&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;A download icon has been added to the default icon font and &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/social.yml&lt;/code&gt; has been updated.&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/my-scripts.html&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/my-inline.scss&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/my-style.scss&lt;/code&gt; to make it easier to add custom scripts and styles without modifying the source. This is especially handy when using the gem-based version of the theme.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;changed&quot;&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Loading web fonts now starts earlier and content download no longer blocks
-swapping out the fallback font for the new font.
-Previously, a page containing lots of images could have delayed displaying the web fonts significantly.&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; layout no longer contains a message suggesting that you don’t use it.&lt;/li&gt;
-  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;home&lt;/code&gt; layout now shows up to 5 blog posts and up to 5 pages blow the regular content.&lt;/li&gt;
-  &lt;li&gt;The version history has been moved from &lt;code class=&quot;highlighter-rouge&quot;&gt;docs/&amp;lt;version&amp;gt;/versions.md&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;CHANGELOG.md&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;The license notices have been moved from &lt;code class=&quot;highlighter-rouge&quot;&gt;docs/&amp;lt;version&amp;gt;/licenses.md&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;NOTICE.md&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Updated gem and npm dependencies&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;The default font has been changed from “Noto Serif” to “Noto Sans”.
-If you have a &lt;code class=&quot;highlighter-rouge&quot;&gt;font&lt;/code&gt; entry in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, this will have no effect.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nap.jpg&lt;/code&gt; is no longer used as default background image in the gem-based theme.&lt;/li&gt;
-  &lt;li&gt;The sidebar content width is now limited to the width of the sidebar (this only effects large screens).&lt;/li&gt;
-  &lt;li&gt;Project cards and pagination buttons now have slightly rounded borders for a less “rigid” look.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;how-to-restore-the-old-styles&quot;&gt;How to restore the old styles&lt;/h4&gt;
-&lt;p&gt;If you would like to use the old font, add the following to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;font_heading&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Roboto&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Slab',&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Helvetica,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Arial,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;sans-serif&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Noto&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Serif',&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Georgia,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;serif&quot;&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;google_fonts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Roboto+Slab:700|Noto+Serif:400,400i,700,700i&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;If you were relying on the default setting for the background image, add the following to &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/hydejack/assets/img/nap.jpg&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Note that you have to replace &lt;code class=&quot;highlighter-rouge&quot;&gt;/hydejack&lt;/code&gt; with your &lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;To restore the old sidebar, open (or create) &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/my-inline.scss&lt;/code&gt; and add the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.sidebar-sticky&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;To remove the border radius, open (or create) &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass/my-inline.scss&lt;/code&gt; and add the following:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.card&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.pagination-item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="hydejack" /><summary type="html">This maintenance release includes various quality-of-life improvements, especially when using the gem-based version of the theme. These changes come in handy when using Hydejack for a quick (project-) page: The home layout, which is used when using jekyll new, is now a proper layout that displays a few posts/pages below the regular content, and it is again possible to define an author in _config.yml without setting up a _data directory (for more, see blow).</summary></entry><entry><title type="html">Related Projects and Data Tables (v6.4)</title><link href="https://denzilly.github.io/2017/06/21/related-projects-and-data-tables/" rel="alternate" type="text/html" title="Related Projects and Data Tables (v6.4)" /><published>2017-06-21T00:00:00+02:00</published><updated>2017-06-21T00:00:00+02:00</updated><id>https://denzilly.github.io/2017/06/21/related-projects-and-data-tables</id><content type="html" xml:base="https://denzilly.github.io/2017/06/21/related-projects-and-data-tables/">&lt;p&gt;In this release I’ve added a “Other Projects” section to the bottom of each project page,
-making it easier for users to navigate through your collection and discover other projects.
-Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).&lt;/p&gt;
-
-&lt;p&gt;For more on how to add tables, see the new section in &lt;a href=&quot;https://qwtel.com/hydejack/docs/writing/&quot;&gt;docs/writing&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Smaller changes include a reduced usage of horizontal lines and a more “semantic” use of &lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt; elements.
-Specifically, the semantics of the resume layout have been improved.
-This is best visualized when viewing the page with a text browser like &lt;code class=&quot;highlighter-rouge&quot;&gt;w3m&lt;/code&gt;.
-For example, before 6.4 the skills section looked like&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Skills
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Web Development | Level: Master
-
-Keywords:
-
-  • HTML
-  • CSS
-  • Javascript
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Compression | Level: Master
-
-Keywords:
-
-  • Mpeg
-  • MP4
-  • GIF
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;(lots of &lt;code class=&quot;highlighter-rouge&quot;&gt;hr&lt;/code&gt;s, skill level as part of the headline 😕)&lt;/p&gt;
-
-&lt;p&gt;Now it looks like&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Skills
-
-Web Development
-    Level: Master
-    Keywords:
-      □ HTML
-      □ CSS
-      □ Javascript
-Compression
-    Level: Master
-    Keywords:
-      □ Mpeg
-      □ MP4
-      □ GIF
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;(using a &lt;code class=&quot;highlighter-rouge&quot;&gt;dl&lt;/code&gt;, so that &lt;code class=&quot;highlighter-rouge&quot;&gt;Level -&amp;gt; &quot;Master&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Keywords -&amp;gt; ul&lt;/code&gt;, …)&lt;/p&gt;
-
-&lt;p&gt;There’s many more minor changes and fixes that you can read below.&lt;/p&gt;
-
-&lt;h2 id=&quot;patch-notes&quot;&gt;Patch Notes&lt;/h2&gt;
-&lt;h3 id=&quot;minor&quot;&gt;Minor&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Added “Other Projects” section to the bottom of the project layout (similar to “Related Posts”)&lt;/li&gt;
-  &lt;li&gt;Added CSS classes that make viewing larger (data-) tables possible&lt;/li&gt;
-  &lt;li&gt;Added section on tables to &lt;a href=&quot;https://qwtel.com/hydejack/docs/writing/&quot;&gt;docs/writing&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Reduced use of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr/&amp;gt;&lt;/code&gt; elements, using CSS borders instead.&lt;/li&gt;
-  &lt;li&gt;Improved semantic HTML of resume&lt;/li&gt;
-  &lt;li&gt;Follow favicon best practices and include example icons&lt;/li&gt;
-  &lt;li&gt;Added &lt;code class=&quot;highlighter-rouge&quot;&gt;no_google_fonts&lt;/code&gt; option&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Reduced number of horizontal lines, making many layouts feel less “cluttered” (esp. &lt;code class=&quot;highlighter-rouge&quot;&gt;blog&lt;/code&gt; layout)&lt;/li&gt;
-  &lt;li&gt;Made link hover styles consistent across the board&lt;/li&gt;
-  &lt;li&gt;Visually separated &lt;code class=&quot;highlighter-rouge&quot;&gt;thead&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tbody&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;tfoot&lt;/code&gt; within tables.&lt;/li&gt;
-  &lt;li&gt;Changed RSS and email icons&lt;/li&gt;
-  &lt;li&gt;Removed top margin for consecutive headings, e.g. when using &lt;code class=&quot;highlighter-rouge&quot;&gt;h3&lt;/code&gt; immediately after &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;fixes&quot;&gt;Fixes&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Fixed bug that caused inline math to be moved to the end of a paragraph when dynamically loading a page.&lt;/li&gt;
-  &lt;li&gt;Fixed bug that caused layout to break in IE11.&lt;/li&gt;
-  &lt;li&gt;Fixed bug that caused the project animation to “jump” when using long project titles.&lt;/li&gt;
-  &lt;li&gt;No more empty attributes on &lt;code class=&quot;highlighter-rouge&quot;&gt;img&lt;/code&gt; tags.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="hydejack" /><summary type="html">In this release I’ve added a “Other Projects” section to the bottom of each project page, making it easier for users to navigate through your collection and discover other projects. Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).</summary></entry><entry><title type="html">Third Party Scripts (v6.3)</title><link href="https://denzilly.github.io/2017/06/06/third-party-scripts/" rel="alternate" type="text/html" title="Third Party Scripts (v6.3)" /><published>2017-06-06T00:00:00+02:00</published><updated>2017-06-06T00:00:00+02:00</updated><id>https://denzilly.github.io/2017/06/06/third-party-scripts</id><content type="html" xml:base="https://denzilly.github.io/2017/06/06/third-party-scripts/">&lt;p&gt;This release makes including third party plugins easier.
+  &lt;li&gt;Chess WC battle&lt;/li&gt;
+  &lt;li&gt;Ardea GM&lt;/li&gt;
+  &lt;li&gt;Myanmar metals writeup&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="hydejack" /><summary type="html">Putting aside the ‘how’ for a second, why does this page exist? Why do blogs exist at all? Is it really necessary for every single person to air out their metaphorical dirty laundry on the internet, for all to see?</summary></entry><entry><title type="html">Third Party Scripts (v6.3)</title><link href="https://denzilly.github.io/2017/06/06/third-party-scripts/" rel="alternate" type="text/html" title="Third Party Scripts (v6.3)" /><published>2017-06-06T00:00:00+02:00</published><updated>2017-06-06T00:00:00+02:00</updated><id>https://denzilly.github.io/2017/06/06/third-party-scripts</id><content type="html" xml:base="https://denzilly.github.io/2017/06/06/third-party-scripts/">&lt;p&gt;This release makes including third party plugins easier.
 Until now, the push state approach to loading new pages has been interfering with embedded &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt; tags.
 This version changes this by simulating the sequential loading of script tags on a fresh page load.&lt;/p&gt;
 
@@ -554,7 +389,7 @@ See the &lt;a href=&quot;https://qwtel.com/hydejack/docs/&quot;&gt;Documentation
 
 &lt;p&gt;Hyde is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
 
-&lt;p&gt;Thanks!&lt;/p&gt;</content><author><name>&lt;firtname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="hyde" /><summary type="html">Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content. It’s based on Poole, the Jekyll butler.</summary></entry><entry><title type="html">Example content</title><link href="https://denzilly.github.io/2012/02/07/example-content/" rel="alternate" type="text/html" title="Example content" /><published>2012-02-07T00:00:00+01:00</published><updated>2012-02-07T00:00:00+01:00</updated><id>https://denzilly.github.io/2012/02/07/example-content</id><content type="html" xml:base="https://denzilly.github.io/2012/02/07/example-content/">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;</content><author><name>mdo</name></author><category term="hyde" /><summary type="html">Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content. It’s based on Poole, the Jekyll butler.</summary></entry><entry><title type="html">Example content</title><link href="https://denzilly.github.io/2012/02/07/example-content/" rel="alternate" type="text/html" title="Example content" /><published>2012-02-07T00:00:00+01:00</published><updated>2012-02-07T00:00:00+01:00</updated><id>https://denzilly.github.io/2012/02/07/example-content</id><content type="html" xml:base="https://denzilly.github.io/2012/02/07/example-content/">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
@@ -685,7 +520,7 @@ See the &lt;a href=&quot;https://qwtel.com/hydejack/docs/&quot;&gt;Documentation
   &lt;/tfoot&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</content><author><name>&lt;firtname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="hyde" /><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</summary></entry><entry><title type="html">What’s Jekyll?</title><link href="https://denzilly.github.io/2012/02/06/whats-jekyll/" rel="alternate" type="text/html" title="What's Jekyll?" /><published>2012-02-06T00:00:00+01:00</published><updated>2012-02-06T00:00:00+01:00</updated><id>https://denzilly.github.io/2012/02/06/whats-jekyll</id><content type="html" xml:base="https://denzilly.github.io/2012/02/06/whats-jekyll/">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</content><author><name>mdo</name></author><category term="hyde" /><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</summary></entry><entry><title type="html">What’s Jekyll?</title><link href="https://denzilly.github.io/2012/02/06/whats-jekyll/" rel="alternate" type="text/html" title="What's Jekyll?" /><published>2012-02-06T00:00:00+01:00</published><updated>2012-02-06T00:00:00+01:00</updated><id>https://denzilly.github.io/2012/02/06/whats-jekyll</id><content type="html" xml:base="https://denzilly.github.io/2012/02/06/whats-jekyll/">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
 See the &lt;a href=&quot;https://qwtel.com/hydejack/docs/&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
@@ -696,4 +531,4 @@ See the &lt;a href=&quot;https://qwtel.com/hydejack/docs/&quot;&gt;Documentation
 
 &lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
 
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name>&lt;firtname&gt; &lt;lastname&gt;</name><email>&lt;mail@domain.tld&gt;</email></author><category term="hyde" /><summary type="html">Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From the project’s readme:</summary></entry></feed>
+&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;</content><author><name>mdo</name></author><category term="hyde" /><summary type="html">Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From the project’s readme:</summary></entry></feed>

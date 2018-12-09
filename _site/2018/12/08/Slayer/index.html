@@ -31,21 +31,21 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Gems! (v6.5) &middot; Bort Tommer</title>
+  <title>Slaying the top 2000 &middot; Bartnet</title>
 
 
 
-<meta name="description" content="This maintenance release includes various quality-of-life improvements, especially when using the gem-based version of the theme. These changes come in handy when using Hydejack for a quick (project-) page: The home layout, which is used when using jekyll new, is now a proper layout that displays a few posts/pages below...">
+<meta name="description" content="For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably, last year’s edition was listened to by 11.3 million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address...">
 
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/2017/07/27/gems/">
+<link rel="canonical" href="https://denzilly.github.io/2018/12/08/Slayer/">
 
-<link rel="alternate" type="application/atom+xml" title="Bort Tommer Feed" href="https://denzilly.github.io/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bartnet Feed" href="https://denzilly.github.io/feed.xml">
 
 
-  <link rel="prev" href="https://denzilly.github.io/2017/06/21/related-projects-and-data-tables/">
+  <link rel="prev" href="https://denzilly.github.io/2018/11/30/origins/">
 
 
 
@@ -160,16 +160,16 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.png">
       
 
-<article id="post-2017/07/27/gems" class="post" role="article">
+<article id="post-2018/12/08/Slayer" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        Gems! (v6.5)
+        Slaying the top 2000
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2017-07-27T00:00:00+02:00">27 Jul 2017</time>
+      <time datetime="2018-12-08T00:00:00+01:00">08 Dec 2018</time>
       
 
 
@@ -192,7 +192,7 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-on <a href="/tag/hydejack/" data-flip="title">Hydejack</a>
+on <span>Slayer</span>
 
     </p>
 
@@ -203,121 +203,22 @@ on <a href="/tag/hydejack/" data-flip="title">Hydejack</a>
   </header>
 
   
-    <p>This maintenance release includes various quality-of-life improvements,
-especially when using the gem-based version of the theme.
-These changes come in handy when using Hydejack for a quick (project-) page:
-The <code class="highlighter-rouge">home</code> layout, which is used when using <code class="highlighter-rouge">jekyll new</code>,
-is now a proper layout that displays a few posts/pages below the regular content,
-and it is again possible to define an author in <code class="highlighter-rouge">_config.yml</code>
-without setting up a <code class="highlighter-rouge">_data</code> directory (for more, see blow).</p>
+    <p>For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably,
+last year’s edition was listened to by <strong>11.3</strong> million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address drew a mere 1-1.5 million viewers.</p>
 
-<p>Version 6.5 also includes smaller design adjustments.
-Most notably, the default font is now Noto Sans.
-With the benefit of hindsight,
-using a serif font in combination with the slab headings feels more like a bug in the design than anything else.
-However, should you be happy with Noto Serif (the previous default font), there is no need to worry
-— this only effects the default setting.</p>
+<p>pic of willem</p>
 
-<p>For the full patch notes, read on.</p>
+<p>The mere suggestion of manipulating the results of this list drew a good friend to describe it as a sacred national institution, and that anything of the sort would be akin to high treason.</p>
 
-<h2 id="patch-notes">Patch Notes</h2>
-<h3 id="added">Added</h3>
-<ul>
-  <li>
-    <p>Hydejack now uses additional Jekyll plugins by default, which make working with GitHub more convenient.
-They have been added to the <code class="highlighter-rouge">Gemfile</code> and <code class="highlighter-rouge">_config.yml</code>.
-Note that existing users need to update their <code class="highlighter-rouge">_config.yml</code>:</p>
+<p>Don’t get me wrong, the idea behind the top 2000 is pretty compelling and wholesome, but to be frank, the top of this list has met with little variation since it’s inception. Indeed, anyone who knows anything about this list, knows that Queen’s <em>Bohemian Rhapsody</em> has been in the number 1 spot almost every single time, otherwise taking second place. This being the crown jewel of repetition, the top 10 is otherwise populated by songs that you also loved to hear, the first 14 times you heard them. Such hotel-lobby bangers as <em>Hotel California</em>, <em>Piano Man</em>, and <em>November Rain</em> all tend to come back, year after year.</p>
 
-    <div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">gems</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="s">jekyll-default-layout</span> <span class="c1"># new</span>
-  <span class="pi">-</span> <span class="s">jekyll-feed</span>
-  <span class="pi">-</span> <span class="s">jekyll-optional-front-matter</span> <span class="c1"># new</span>
-  <span class="pi">-</span> <span class="s">jekyll-paginate</span>
-  <span class="pi">-</span> <span class="s">jekyll-redirect-from</span>
-  <span class="pi">-</span> <span class="s">jekyll-relative-links</span> <span class="c1"># new</span>
-  <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-</code></pre>
-    </div>
-  </li>
-  <li>Added <code class="highlighter-rouge">licenses</code> folder that includes the full license texts of licenses mentioned in <code class="highlighter-rouge">NOTICE.md</code>.</li>
-  <li>
-    <p>You can, once again, define the author in <code class="highlighter-rouge">_config.yml</code>.
-Using <code class="highlighter-rouge">_data/authors.yml</code> is still recommended (and takes precedence),
-but this option is more convenient when setting up a quick (project-) page using the gem-based theme.
-Also, a mini-version of <code class="highlighter-rouge">_data/social.yml</code> can be provided as part <code class="highlighter-rouge">_config.yml</code>, e.g.:</p>
+<p>Enter Slayer. A band whose reputation precedes it as one of the heaviest, fastest, and most sonically abraisive acts in modern music. Celebrated by metalheads of all cultures and origins as one of the groups to have established the thrash metal movement, their music has arguably inspired an entire generation of musicians, and united lovers of heavy music all over the globe.</p>
 
-    <div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">author</span><span class="pi">:</span>
-  <span class="s">social</span><span class="pi">:</span>
-    <span class="s">github</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack</span>
-    <span class="s">npm</span><span class="pi">:</span> <span class="s">https://www.npmjs.com/package/hydejack</span>
-    <span class="s">download</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack/archive/v6.6.1.zip</span>
+<p>Why not try and take the #1 spot away from Freddie, and see if we could celebrate everything Slayer has done in the year that they choose to hang up their guitars?</p>
 
-<span class="s">data_social</span><span class="pi">:</span>
-  <span class="s">github</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">GitHub</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-github</span>
-  <span class="s">npm</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">npm</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-npm</span>
-  <span class="s">download</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">Download</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-box-add</span>
-</code></pre>
-    </div>
-  </li>
-  <li>A download icon has been added to the default icon font and <code class="highlighter-rouge">_data/social.yml</code> has been updated.</li>
-  <li>Added <code class="highlighter-rouge">_includes/my-scripts.html</code>, <code class="highlighter-rouge">_sass/my-inline.scss</code> and <code class="highlighter-rouge">_sass/my-style.scss</code> to make it easier to add custom scripts and styles without modifying the source. This is especially handy when using the gem-based version of the theme.</li>
-</ul>
+<h2 id="the-plan">The Plan</h2>
 
-<h3 id="changed">Changed</h3>
-<ul>
-  <li>Loading web fonts now starts earlier and content download no longer blocks
-swapping out the fallback font for the new font.
-Previously, a page containing lots of images could have delayed displaying the web fonts significantly.</li>
-  <li>The <code class="highlighter-rouge">home</code> layout no longer contains a message suggesting that you don’t use it.</li>
-  <li>The <code class="highlighter-rouge">home</code> layout now shows up to 5 blog posts and up to 5 pages blow the regular content.</li>
-  <li>The version history has been moved from <code class="highlighter-rouge">docs/&lt;version&gt;/versions.md</code> to <code class="highlighter-rouge">CHANGELOG.md</code>.</li>
-  <li>The license notices have been moved from <code class="highlighter-rouge">docs/&lt;version&gt;/licenses.md</code> to <code class="highlighter-rouge">NOTICE.md</code>.</li>
-  <li>Updated gem and npm dependencies</li>
-</ul>
-
-<h3 id="design">Design</h3>
-<ul>
-  <li>The default font has been changed from “Noto Serif” to “Noto Sans”.
-If you have a <code class="highlighter-rouge">font</code> entry in <code class="highlighter-rouge">_config.yml</code>, this will have no effect.</li>
-  <li><code class="highlighter-rouge">nap.jpg</code> is no longer used as default background image in the gem-based theme.</li>
-  <li>The sidebar content width is now limited to the width of the sidebar (this only effects large screens).</li>
-  <li>Project cards and pagination buttons now have slightly rounded borders for a less “rigid” look.</li>
-</ul>
-
-<h4 id="how-to-restore-the-old-styles">How to restore the old styles</h4>
-<p>If you would like to use the old font, add the following to <code class="highlighter-rouge">_config.yml</code>:</p>
-
-<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">font_heading</span><span class="pi">:</span> <span class="s2">"</span><span class="s">'Roboto</span><span class="nv"> </span><span class="s">Slab',</span><span class="nv"> </span><span class="s">Helvetica,</span><span class="nv"> </span><span class="s">Arial,</span><span class="nv"> </span><span class="s">sans-serif"</span>
-<span class="s">font</span><span class="pi">:</span>         <span class="s2">"</span><span class="s">'Noto</span><span class="nv"> </span><span class="s">Serif',</span><span class="nv"> </span><span class="s">Georgia,</span><span class="nv"> </span><span class="s">serif"</span>
-<span class="s">google_fonts</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Roboto+Slab:700|Noto+Serif:400,400i,700,700i"</span>
-</code></pre>
-</div>
-
-<p>If you were relying on the default setting for the background image, add the following to <code class="highlighter-rouge">_config.yml</code>:</p>
-
-<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">image</span><span class="pi">:</span> <span class="s">/hydejack/assets/img/nap.jpg</span>
-</code></pre>
-</div>
-
-<p>Note that you have to replace <code class="highlighter-rouge">/hydejack</code> with your <code class="highlighter-rouge">baseurl</code>.</p>
-
-<p>To restore the old sidebar, open (or create) <code class="highlighter-rouge">_sass/my-inline.scss</code> and add the following:</p>
-
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@media</span> <span class="n">screen</span> <span class="p">{</span> <span class="nc">.sidebar-sticky</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span> <span class="nl">max-width</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span> <span class="p">}</span>
-</code></pre>
-</div>
-
-<p>To remove the border radius, open (or create) <code class="highlighter-rouge">_sass/my-inline.scss</code> and add the following:</p>
-
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.card</span><span class="o">,</span> <span class="nc">.pagination-item</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
-</code></pre>
-</div>
+<p>There are arguably several different ways to approach this problem–</p>
 
   
 
@@ -342,7 +243,7 @@ If you have a <code class="highlighter-rouge">font</code> entry in <code class="
   <img
     src="https://placehold.it/128x128"
     class="me"
-    alt="<firstname> <lastname>"
+    alt="Bart Timmer"
     srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
     
   />
@@ -354,11 +255,8 @@ If you have a <code class="highlighter-rouge">font</code> entry in <code class="
     About
   </h2>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Open <code class="highlighter-rouge">_data/authors.yml</code> to edit this text.</p>
+  <p>I am a 25 year old economics student, and hobbyist in many things. This page documents some of my projects, activities
+and things I generally find interesting to write about. If you have any questions or inquiries, feel free to email me.</p>
 
 
   
@@ -381,29 +279,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="https://twitter.com/<username>" title="Twitter">
-    <span class="icon-twitter"></span>
-    <span class="sr-only">Twitter</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://github.com/<username>" title="GitHub">
+  <a href="https://github.com/denzilly" title="GitHub">
     <span class="icon-github"></span>
     <span class="sr-only">GitHub</span>
   </a>
@@ -425,31 +301,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="mailto:<mail@domain.tld>" title="Email">
+  <a href="mailto:btimmer313@gmail.com" title="Email">
     <span class="icon-mail"></span>
     <span class="sr-only">Email</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://<url>/feed.xml" title="RSS">
-    <span class="icon-rss2"></span>
-    <span class="sr-only">RSS</span>
   </a>
 </li>
 
@@ -481,54 +335,6 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
         
           
           
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/2017/06/21/related-projects-and-data-tables/" data-flip="title">
-    <span>Related Projects and Data Tables (v6.4)</span>
-  </a>
-  <small><time datetime="2017-06-21T00:00:00+02:00">
-    21 Jun 2017
-  </time></small>
-</li>
-
-        
-      
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/2017/06/06/third-party-scripts/" data-flip="title">
-    <span>Third Party Scripts (v6.3)</span>
-  </a>
-  <small><time datetime="2017-06-06T00:00:00+02:00">
-    06 Jun 2017
-  </time></small>
-</li>
-
-        
-      
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/2017/05/03/javascripten/" data-flip="title">
-    <span>JavaScripten (v6)</span>
-  </a>
-  <small><time datetime="2017-05-03T00:00:00+02:00">
-    03 May 2017
-  </time></small>
-</li>
-
-        
-      
     
   </ul>
 </aside>
@@ -555,8 +361,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/nap.png)"></div>
     <header class="sidebar-sticky" role="banner">
       <div class="sidebar-about">
-        <h1><a id="_title" href="/">Bort Tommer</a></h1>
-        <p>What am I doing?</p>
+        <h1><a id="_title" href="/">Bartnet</a></h1>
+        <p>You’ve heard of skynet, now enter the bartnet.</p>
 
       </div>
 
@@ -575,23 +381,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     </li>
   
     <li>
-      <a class="sidebar-nav-item" href="/projects/">Projects</a>
-    </li>
-  
-    <li>
-      <a class="sidebar-nav-item" href="/resume/">Resume</a>
-    </li>
-  
-    <li>
       <a class="sidebar-nav-item" href="/about/">About</a>
     </li>
   
     <li>
       <a class="sidebar-nav-item" href="/docs/6.6.1/">Documentation</a>
-    </li>
-  
-    <li>
-      <a class="sidebar-nav-item" href="/download/">Download</a>
     </li>
   
 </ul>
@@ -620,29 +414,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="https://twitter.com/<username>" title="Twitter">
-    <span class="icon-twitter"></span>
-    <span class="sr-only">Twitter</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://github.com/<username>" title="GitHub">
+  <a href="https://github.com/denzilly" title="GitHub">
     <span class="icon-github"></span>
     <span class="sr-only">GitHub</span>
   </a>
@@ -664,31 +436,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="mailto:<mail@domain.tld>" title="Email">
+  <a href="mailto:btimmer313@gmail.com" title="Email">
     <span class="icon-mail"></span>
     <span class="sr-only">Email</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://<url>/feed.xml" title="RSS">
-    <span class="icon-rss2"></span>
-    <span class="sr-only">RSS</span>
   </a>
 </li>
 

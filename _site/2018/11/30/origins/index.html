@@ -31,29 +31,27 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Related Projects and Data Tables (v6.4) &middot; Bort Tommer</title>
+  <title>Bartnet, and how it works &middot; Bartnet</title>
 
 
 
-<meta name="description" content="In this release I’ve added a “Other Projects” section to the bottom of each project page,
-making it easier for users to navigate through your collection and discover other projects.
-Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).
+<meta name="description" content="Putting aside the ‘how’ for a second, why does this page exist? Why do blogs exist at all? Is it really necessary for every single person to air out their metaphorical dirty laundry on the internet, for all to see?
 
 ">
 
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/2017/06/21/related-projects-and-data-tables/">
+<link rel="canonical" href="https://denzilly.github.io/2018/11/30/origins/">
 
-<link rel="alternate" type="application/atom+xml" title="Bort Tommer Feed" href="https://denzilly.github.io/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bartnet Feed" href="https://denzilly.github.io/feed.xml">
 
 
   <link rel="prev" href="https://denzilly.github.io/2017/06/06/third-party-scripts/">
 
 
 
-  <link rel="next" href="https://denzilly.github.io/2017/07/27/gems/">
+  <link rel="next" href="https://denzilly.github.io/2018/12/08/Slayer/">
 
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -166,16 +164,16 @@ Also, it’s now possible to display larger (data-) tables that were previously 
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.png">
       
 
-<article id="post-2017/06/21/related-projects-and-data-tables" class="post" role="article">
+<article id="post-2018/11/30/origins" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        Related Projects and Data Tables (v6.4)
+        Bartnet, and how it works
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2017-06-21T00:00:00+02:00">21 Jun 2017</time>
+      <time datetime="2018-11-30T00:00:00+01:00">30 Nov 2018</time>
       
 
 
@@ -209,95 +207,29 @@ on <a href="/tag/hydejack/" data-flip="title">Hydejack</a>
   </header>
 
   
-    <p>In this release I’ve added a “Other Projects” section to the bottom of each project page,
-making it easier for users to navigate through your collection and discover other projects.
-Also, it’s now possible to display larger (data-) tables that were previously cut off (especially on mobile devices).</p>
+    <p>Putting aside the ‘how’ for a second, why does this page exist? Why do blogs exist at all? Is it really necessary for every single person to air out their metaphorical dirty laundry on the internet, for all to see?</p>
 
-<p>For more on how to add tables, see the new section in <a href="https://qwtel.com/hydejack/docs/writing/">docs/writing</a>.</p>
+<p>Surely enlightenment can be sought elsewhere, from sources more credible than the recalcitrant braincells that choose to always sit at the back of the bus. Instead, you could read a book or newspaper, or perhaps even attempt to decipher a dirty handkerchief.</p>
 
-<p>Smaller changes include a reduced usage of horizontal lines and a more “semantic” use of <code class="highlighter-rouge">hr</code> elements.
-Specifically, the semantics of the resume layout have been improved.
-This is best visualized when viewing the page with a text browser like <code class="highlighter-rouge">w3m</code>.
-For example, before 6.4 the skills section looked like</p>
+<p>A power inside compels us, for whatever reason, to share our experiences with the world; some to teach, some to persuade, and some to entertain.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Skills
+<h2 id="how-it-works">How it works</h2>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<p>This site is run using <a href="https://jekyllrb.com">Jekyll</a>, a simple site generation platform written in ruby, that works great for static sites such as blogs. While being easy to use and update, one of the best features is arguably that you can host a website in one click on Github Pages, as they offer a built in Jekyll page builder.</p>
 
-Web Development | Level: Master
+<p>Credit where credit is due, styling of this page is run off of a template called <a href="https://hydejack.com"><em>Hydejack</em></a>, made by the talented qwtel.</p>
 
-Keywords:
+<p>The page is run out of two repositories, one for development and one for deployment, so that it can be edited from virtually anywhere as long as I have access to the internet.</p>
 
-  • HTML
-  • CSS
-  • Javascript
+<p>The development repository contains everything needed to build the site, including all markdown files, stylesheets, javascript etc. The static site files are generated using these, and then moved to the deployment repository which houses just the generated static site files. Github automatically builds and hosts the site from the static files.</p>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<p>Ideas for posts:</p>
 
-Compression | Level: Master
-
-Keywords:
-
-  • Mpeg
-  • MP4
-  • GIF
-</code></pre>
-</div>
-
-<p>(lots of <code class="highlighter-rouge">hr</code>s, skill level as part of the headline 😕)</p>
-
-<p>Now it looks like</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>Skills
-
-Web Development
-    Level: Master
-    Keywords:
-      □ HTML
-      □ CSS
-      □ Javascript
-Compression
-    Level: Master
-    Keywords:
-      □ Mpeg
-      □ MP4
-      □ GIF
-</code></pre>
-</div>
-
-<p>(using a <code class="highlighter-rouge">dl</code>, so that <code class="highlighter-rouge">Level -&gt; "Master"</code>, <code class="highlighter-rouge">Keywords -&gt; ul</code>, …)</p>
-
-<p>There’s many more minor changes and fixes that you can read below.</p>
-
-<h2 id="patch-notes">Patch Notes</h2>
-<h3 id="minor">Minor</h3>
 <ul>
-  <li>Added “Other Projects” section to the bottom of the project layout (similar to “Related Posts”)</li>
-  <li>Added CSS classes that make viewing larger (data-) tables possible</li>
-  <li>Added section on tables to <a href="https://qwtel.com/hydejack/docs/writing/">docs/writing</a></li>
-  <li>Reduced use of <code class="highlighter-rouge">&lt;hr/&gt;</code> elements, using CSS borders instead.</li>
-  <li>Improved semantic HTML of resume</li>
-  <li>Follow favicon best practices and include example icons</li>
-  <li>Added <code class="highlighter-rouge">no_google_fonts</code> option</li>
+  <li>Chess WC battle</li>
+  <li>Ardea GM</li>
+  <li>Myanmar metals writeup</li>
 </ul>
-
-<h3 id="design">Design</h3>
-<ul>
-  <li>Reduced number of horizontal lines, making many layouts feel less “cluttered” (esp. <code class="highlighter-rouge">blog</code> layout)</li>
-  <li>Made link hover styles consistent across the board</li>
-  <li>Visually separated <code class="highlighter-rouge">thead</code> and <code class="highlighter-rouge">tbody</code> and <code class="highlighter-rouge">tfoot</code> within tables.</li>
-  <li>Changed RSS and email icons</li>
-  <li>Removed top margin for consecutive headings, e.g. when using <code class="highlighter-rouge">h3</code> immediately after <code class="highlighter-rouge">h2</code>.</li>
-</ul>
-
-<h3 id="fixes">Fixes</h3>
-<ul>
-  <li>Fixed bug that caused inline math to be moved to the end of a paragraph when dynamically loading a page.</li>
-  <li>Fixed bug that caused layout to break in IE11.</li>
-  <li>Fixed bug that caused the project animation to “jump” when using long project titles.</li>
-  <li>No more empty attributes on <code class="highlighter-rouge">img</code> tags.</li>
-</ul>
-
 
   
 
@@ -322,7 +254,7 @@ Compression
   <img
     src="https://placehold.it/128x128"
     class="me"
-    alt="<firstname> <lastname>"
+    alt="Bart Timmer"
     srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
     
   />
@@ -334,11 +266,8 @@ Compression
     About
   </h2>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<p>Open <code class="highlighter-rouge">_data/authors.yml</code> to edit this text.</p>
+  <p>I am a 25 year old economics student, and hobbyist in many things. This page documents some of my projects, activities
+and things I generally find interesting to write about. If you have any questions or inquiries, feel free to email me.</p>
 
 
   
@@ -361,29 +290,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="https://twitter.com/<username>" title="Twitter">
-    <span class="icon-twitter"></span>
-    <span class="sr-only">Twitter</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://github.com/<username>" title="GitHub">
+  <a href="https://github.com/denzilly" title="GitHub">
     <span class="icon-github"></span>
     <span class="sr-only">GitHub</span>
   </a>
@@ -405,31 +312,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="mailto:<mail@domain.tld>" title="Email">
+  <a href="mailto:btimmer313@gmail.com" title="Email">
     <span class="icon-mail"></span>
     <span class="sr-only">Email</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://<url>/feed.xml" title="RSS">
-    <span class="icon-rss2"></span>
-    <span class="sr-only">RSS</span>
   </a>
 </li>
 
@@ -457,22 +342,6 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     
       
       
-      
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/2017/07/27/gems/" data-flip="title">
-    <span>Gems! (v6.5)</span>
-  </a>
-  <small><time datetime="2017-07-27T00:00:00+02:00">
-    27 Jul 2017
-  </time></small>
-</li>
-
-        
       
         
           
@@ -509,6 +378,22 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
         
       
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/2016/09/17/the-fast-one/" data-flip="title">
+    <span>The Fast One (v5)</span>
+  </a>
+  <small><time datetime="2016-09-17T00:00:00+02:00">
+    17 Sep 2016
+  </time></small>
+</li>
+
+        
+      
     
   </ul>
 </aside>
@@ -535,8 +420,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/nap.png)"></div>
     <header class="sidebar-sticky" role="banner">
       <div class="sidebar-about">
-        <h1><a id="_title" href="/">Bort Tommer</a></h1>
-        <p>What am I doing?</p>
+        <h1><a id="_title" href="/">Bartnet</a></h1>
+        <p>You’ve heard of skynet, now enter the bartnet.</p>
 
       </div>
 
@@ -555,23 +440,11 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
     </li>
   
     <li>
-      <a class="sidebar-nav-item" href="/projects/">Projects</a>
-    </li>
-  
-    <li>
-      <a class="sidebar-nav-item" href="/resume/">Resume</a>
-    </li>
-  
-    <li>
       <a class="sidebar-nav-item" href="/about/">About</a>
     </li>
   
     <li>
       <a class="sidebar-nav-item" href="/docs/6.6.1/">Documentation</a>
-    </li>
-  
-    <li>
-      <a class="sidebar-nav-item" href="/download/">Download</a>
     </li>
   
 </ul>
@@ -600,29 +473,7 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="https://twitter.com/<username>" title="Twitter">
-    <span class="icon-twitter"></span>
-    <span class="sr-only">Twitter</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://github.com/<username>" title="GitHub">
+  <a href="https://github.com/denzilly" title="GitHub">
     <span class="icon-github"></span>
     <span class="sr-only">GitHub</span>
   </a>
@@ -644,31 +495,9 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 
 <li>
-  <a href="mailto:<mail@domain.tld>" title="Email">
+  <a href="mailto:btimmer313@gmail.com" title="Email">
     <span class="icon-mail"></span>
     <span class="sr-only">Email</span>
-  </a>
-</li>
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a href="https://<url>/feed.xml" title="RSS">
-    <span class="icon-rss2"></span>
-    <span class="sr-only">RSS</span>
   </a>
 </li>
 
