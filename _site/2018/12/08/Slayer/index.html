@@ -31,21 +31,23 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Slaying the top 2000 &middot; Bartnet</title>
+  <title>Slaying the Top 2000 &middot; Bartnet</title>
 
 
 
-<meta name="description" content="For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably, last year’s edition was listened to by 11.3 million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address...">
+<meta name="description" content="Spoilers: It didn’t work, but with a bit more time and dedication, we will have a serious go at it next year..
+
+">
 
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/2018/12/08/Slayer/">
+<link rel="canonical" href="http://localhost:4000/2018/12/08/Slayer/">
 
-<link rel="alternate" type="application/atom+xml" title="Bartnet Feed" href="https://denzilly.github.io/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bartnet Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="https://denzilly.github.io/2018/11/30/origins/">
+  <link rel="prev" href="http://localhost:4000/2018/11/30/origins/">
 
 
 
@@ -164,7 +166,7 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
   <header>
     <h1 class="post-title">
       
-        Slaying the top 2000
+        Slaying the Top 2000
       
     </h1>
 
@@ -203,22 +205,74 @@ on <span>Slayer</span>
   </header>
 
   
-    <p>For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably,
-last year’s edition was listened to by <strong>11.3</strong> million people, or some 76% of the population aged 10 or older. In comparison, King Willem-Alexander’s 2017 christmas address drew a mere 1-1.5 million viewers.</p>
+    <p><em>Spoilers: It didn’t work, but with a bit more time and dedication, we will have a serious go at it next year..</em></p>
 
-<p>pic of willem</p>
+<p>For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably,
+last year’s edition was listened to by <strong>11.3 million</strong> people, or some 76% of the population aged 10 or older. In comparison, the King’s 2017 christmas address drew a mere million viewers.</p>
+
+<p><img src="https://i.imgur.com/yC3C4f6.jpg" alt="Willem" />
+<em>Unimpressed</em></p>
 
 <p>The mere suggestion of manipulating the results of this list drew a good friend to describe it as a sacred national institution, and that anything of the sort would be akin to high treason.</p>
 
 <p>Don’t get me wrong, the idea behind the top 2000 is pretty compelling and wholesome, but to be frank, the top of this list has met with little variation since it’s inception. Indeed, anyone who knows anything about this list, knows that Queen’s <em>Bohemian Rhapsody</em> has been in the number 1 spot almost every single time, otherwise taking second place. This being the crown jewel of repetition, the top 10 is otherwise populated by songs that you also loved to hear, the first 14 times you heard them. Such hotel-lobby bangers as <em>Hotel California</em>, <em>Piano Man</em>, and <em>November Rain</em> all tend to come back, year after year.</p>
 
-<p>Enter Slayer. A band whose reputation precedes it as one of the heaviest, fastest, and most sonically abraisive acts in modern music. Celebrated by metalheads of all cultures and origins as one of the groups to have established the thrash metal movement, their music has arguably inspired an entire generation of musicians, and united lovers of heavy music all over the globe.</p>
+<p>Enter Slayer. A band whose reputation precedes it as one of the heaviest, fastest, and most sonically abraisive acts in modern music. Celebrated by metalheads of all cultures and origins as one of the groups to have established the thrash metal movement, their music has inspired an entire generation of musicians, and united lovers of heavy music all over the globe.</p>
 
 <p>Why not try and take the #1 spot away from Freddie, and see if we could celebrate everything Slayer has done in the year that they choose to hang up their guitars?</p>
 
-<h2 id="the-plan">The Plan</h2>
+<h2 id="goals-and-requirements">Goals and Requirements</h2>
 
-<p>There are arguably several different ways to approach this problem–</p>
+<p>The plan had a simple goal: vote as many times as <del>humanly</del> possible for the Slayer song “Angel of Death”, with the hope of cracking the top 10. Since time is short, and I’m not completely aware of the internal anti-botting measures in place on the voting website, I decided to use the <a href="https://www.seleniumhq.org/">Selenium</a> web-driver to autonomously steer a a browser into doing my bidding, and enter information into the fields of my choosing.</p>
+
+<p>The top 2000 voting schema works as follows:</p>
+
+<ol>
+  <li>Vote for a minimum of 5 songs of your choosing</li>
+  <li>Enter your motivation for choosing said songs (optional)</li>
+  <li>Enter your full name and e-mail address</li>
+  <li>Accept the ToC and complete a reCAPTCHA</li>
+</ol>
+
+<p>At this point, the first challenges present themselves.</p>
+
+<ul>
+  <li>We need to vote for 4 other songs, if we choose the same ones each time, then they will get an equal number of votes. Also, we should probably randomize Slayer’s position in the order to be more inconspicuous.</li>
+  <li>We need a bunch of generic names, as well as email addresses</li>
+  <li>We need to find a way to circumvent the CAPTCHA</li>
+  <li>The script needs to execute in as little time as possible, such that it can complete as often as possible.</li>
+</ul>
+
+<p>First off though, we need to set up the webdriver.</p>
+
+<h2 id="set-up">Set-up</h2>
+
+<p>To get started, we imported the relevant packages and initialised the webdriver to work with firefox.</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<span class="kn">from</span> <span class="nn">selenium.webdriver.common.action_chains</span> <span class="kn">import</span> <span class="n">ActionChains</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+
+<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
+<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://stem.nporadio2.nl/top2000/1"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Allows you to call all sorts of actions on elements on a webpage. In order to do this, you need to provide it with the location of the element that you want to manipulate. This can be by searching through HTML tags based on class or id, but I have found using XPath to be the quickest for the selection of specific elements on a page.</p>
+
+<p>To find the XPath of an object on a webpage, simply inspect it in your browser. Firefox and Chrome both provide a handy copy XPath option that allows you to jam it directly into a <em>find_element_by_xpath</em> in your code. As an example, clicking a button would look something like this:</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">"XPATH_TO_BUTTON"</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</code></pre>
+</div>
 
   
 
