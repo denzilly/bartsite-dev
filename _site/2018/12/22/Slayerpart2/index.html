@@ -31,20 +31,23 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Posts &middot; Bartnet</title>
+  <title>Slaying the Top 2000 Part 2: Names and Emails &middot; Bartnet</title>
 
 
 
-<meta name="description" content="You’ve heard of skynet, now enter the bartnet.
+<meta name="description" content="Welcome back to this short write-up of the top2000 Slayer voter! In this installment, we will look more closely at the part of the script that generates random names and email addresses.
+
 ">
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/posts/">
+<link rel="canonical" href="http://localhost:4000/2018/12/22/Slayerpart2/">
 
 <link rel="alternate" type="application/atom+xml" title="Bartnet Feed" href="http://localhost:4000/feed.xml">
 
+
+  <link rel="prev" href="http://localhost:4000/2018/12/08/Slayer/">
 
 
 
@@ -159,43 +162,204 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.png">
       
 
-
-
+<article id="post-2018/12/22/Slayerpart2" class="post" role="article">
   <header>
-    <h1 class="page-title">Posts</h1>
+    <h1 class="post-title">
+      
+        Slaying the Top 2000 Part 2: Names and Emails
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2018-12-22T00:00:00+06:30">22 Dec 2018</time>
+      
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+on <span>Slayer</span>
+
+    </p>
+
     
   <div class="hr" style="padding-bottom:0"></div>
 
 
   </header>
-  <hr class="sr-only"/>
-
-
 
   
+    <p>Welcome back to this short write-up of the top2000 Slayer voter! In this installment, we will look more closely at the part of the script that generates random names and email addresses.</p>
+
+<h2 id="name-generator">Name Generator</h2>
+
+<p>The next step in the voting procedure asks for some personal information– a name and email address. Fortunately, neither are used for any sort of verification, but I still thought it a good idea to at least use a somewhat realistic naming scheme for my legion of metal-heads.</p>
+
+<p>In order to do this, I decided to select first and last names at random from an online database of the 10,000 most common Dutch names.</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#The following funciton creates a random dutch name from the list of top 10000 first and last names</span>
+<span class="k">def</span> <span class="nf">namegenerator</span><span class="p">():</span>
+
+    <span class="c">#some junk in case working directories get messed up</span>
+    <span class="n">abspath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
+    <span class="n">dname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">abspath</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">dname</span><span class="p">)</span>
+
+
+    <span class="c">#Choose random row from first and lastname csvs</span>
+    <span class="n">firstnum</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9500</span><span class="p">)</span>
+    <span class="n">lastnum</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9500</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">nameget</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+            <span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s">','</span><span class="p">)</span>
+            <span class="n">rows</span> <span class="o">=</span> <span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">csv_reader</span><span class="p">)</span> <span class="k">if</span> <span class="n">idx</span> <span class="ow">in</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">index</span><span class="p">)]</span>
+
+            <span class="k">return</span> <span class="n">rows</span>
+
+
+    <span class="c">#Concatenate into a "full name"</span>
+    <span class="n">full_name</span> <span class="o">=</span> <span class="n">nameget</span><span class="p">(</span><span class="n">firstnum</span><span class="p">,</span><span class="s">'voornamen.csv'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">nameget</span><span class="p">(</span><span class="n">lastnum</span><span class="p">,</span><span class="s">'achternamen.csv'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s">"Your name is: "</span> <span class="o">+</span> <span class="n">full_name</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">full_name</span>
+</code></pre>
+</div>
+
+  
+
+</article>
+
+
+  <hr class="dingbat" />
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
   
     
-    <h2 id="y2018" class="hr">2018</h2>
-    <ul class="related-posts">
+  
+
+  
+
+  <img
+    src="https://placehold.it/128x128"
+    class="me"
+    alt="Bart Timmer"
+    srcset="https://placehold.it/128x128 1x,https://placehold.it/256x256 2x"
     
-  
-  
+  />
 
 
-<li class="h4">
-  <a href="/2018/12/22/Slayerpart2/" data-flip="title">
-    <span>Slaying the Top 2000 Part 2: Names and Emails</span>
+  
+
+  <h2 class="page-title hr">
+    About
+  </h2>
+
+  <p>I am a 25 year old economics student, and hobbyist in many things. This page documents some of my projects, activities
+and things I generally find interesting to write about. If you have any questions or inquiries, feel free to email me.</p>
+
+
+  
+    <div class="sidebar-social">
+      <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/denzilly" title="GitHub">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
   </a>
-  <small><time datetime="2018-12-22T00:00:00+06:30">
-    22 Dec
-  </time></small>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:btimmer313@gmail.com" title="Email">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
 </li>
 
   
 
   
+
   
+</ul>
+
+    </div>
   
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+          
+          
+        
+        
+          
 
 
 <li class="h4">
@@ -203,27 +367,15 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
     <span>Slaying the Top 2000 Part 1</span>
   </a>
   <small><time datetime="2018-12-08T00:00:00+06:30">
-    08 Dec
+    08 Dec 2018
   </time></small>
 </li>
 
-  
-
-  
-  
-  
-
-
-<li class="h4">
-  <a href="/2018/11/30/origins/" data-flip="title">
-    <span>Bartnet, and how it works</span>
-  </a>
-  <small><time datetime="2018-11-30T00:00:00+06:30">
-    30 Nov
-  </time></small>
-</li>
-
+        
+      
+    
   </ul>
+</aside>
 
 
 
