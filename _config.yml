@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Bartnet
+title:               Bart Timmer
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -17,7 +17,7 @@ tagline:             A page about me and my stuff.
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
-description:       You've heard of skynet, now enter the bartnet.
+description:       Interests, projects, and nonsense.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -49,7 +49,7 @@ google_analytics:    <UA-XXXXXXXX-X>
 disqus_shortname:    <username>
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; Bart Timmer 2018. All rights reserved.'
+copyright:           '&copy; Bart Timmer 2019. All rights reserved.'
 
 # Format of the permalinks
 permalink:           pretty

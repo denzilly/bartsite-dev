@@ -51,6 +51,8 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
+  <link rel="next" href="http://localhost:4000/2019/01/08/Slayerpart3/">
+
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <!-- Place favicon.ico in the root directory -->
@@ -171,7 +173,7 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-12-22T00:00:00+06:30">22 Dec 2018</time>
+      <time datetime="2018-12-22T00:00:00+01:00">22 Dec 2018</time>
       
 
 
@@ -209,14 +211,16 @@ on <span>Slayer</span>
 
 <h2 id="name-generator">Name Generator</h2>
 
-<p>The next step in the voting procedure asks for some personal information– a name and email address. Fortunately, neither are used for any sort of verification, but I still thought it a good idea to at least use a somewhat realistic naming scheme for my legion of metal-heads.</p>
+<p>The next step in the voting procedure asks for some personal information– a name and email address. Fortunately, neither are used for any sort of verification, but I still thought it a good idea to at least use a somewhat realistic naming scheme for my legion of autonomous metal-heads.</p>
 
-<p>In order to do this, I decided to select first and last names at random from an online database of the 10,000 most common Dutch names.</p>
+<p>In order to do this, I decided to select first and last names at random from an online database of the 10,000 most common Dutch names. These were scraped into two csv files, <em>voornamen</em> and <em>acthernamen</em>, respectively.</p>
+
+<p>What follows is a simple block of code that chooses two random integers, which are used to call a row from either csv file, representing a first and last name.</p>
 
 <div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#The following funciton creates a random dutch name from the list of top 10000 first and last names</span>
 <span class="k">def</span> <span class="nf">namegenerator</span><span class="p">():</span>
 
-    <span class="c">#some junk in case working directories get messed up</span>
+    <span class="c">#Make sure working directory is script location</span>
     <span class="n">abspath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
     <span class="n">dname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">abspath</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">dname</span><span class="p">)</span>
@@ -241,6 +245,55 @@ on <span>Slayer</span>
     <span class="k">return</span> <span class="n">full_name</span>
 </code></pre>
 </div>
+
+<h2 id="email-generator">Email Generator</h2>
+
+<p>The final piece of information needed is a disposable email address–fortunately, <em>10minutemail</em> provides an excellent service that does exactly as its name suggests. The block of code below uses the requests and BeautifulSoup packages to request an instance of the <em>10minutemail</em> website, and scrape the HTML element containing only the email address. This is subsequently returned as a string.</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">##########Email Generator###############</span>
+
+<span class="k">def</span> <span class="nf">getmail</span><span class="p">():</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://www.10minutemail.com"</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="n">pc</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s">"html.parser"</span><span class="p">)</span>
+
+    <span class="n">email</span> <span class="o">=</span> <span class="n">pc</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s">"input"</span><span class="p">,</span> <span class="p">{</span><span class="s">"id"</span><span class="p">:</span> <span class="s">"mailAddress"</span><span class="p">})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'value'</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">email</span>
+</code></pre>
+</div>
+
+<h2 id="sending-name-and-email-input">Sending Name and Email Input</h2>
+
+<p>Now that we have a “real” sounding Dutch name, as well as a disposable email address, we can send the relevant inputs to the voting site. The block of code below is from the main <em>vote</em> function that was referenced in the first part of this write-up, and operates in much the same way. It finds the relevant input field’s XPATH, and subsequently enters the required information as generated through our generator functions.</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#Song selection is now complete. We now need to fill in name/email and submit the vote</span>
+
+  <span class="c">#Click through to next pages</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
+  <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">songnext</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
+  <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">motiveernext</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
+
+
+  <span class="c">#Call name generator to enter a random name, call email generator for disposable mail</span>
+  <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">namegenerator</span><span class="p">())</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
+  <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">email</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="n">getmail</span><span class="p">())</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
+
+
+  <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, document.body.scrollHeight)"</span><span class="p">)</span>
+  <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
+  <span class="c">#accept terms and conditions</span>
+  <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">tandc</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<h2 id="now-what">Now What?</h2>
+
+<p>We have sent through our song choices and entered the requested personal information to vote, what could possibly be left? As you would expect from such a reputable institution, there is a final familiar layer of protection to would-be spammers–the dreaded reCAPTCHA. To be fair–this is where the project stalled (read: crashed and burned), but if you are interested in potential subversion strategies and theories, read on to part 3.</p>
 
   
 
@@ -355,6 +408,22 @@ and things I generally find interesting to write about. If you have any question
       
       
         
+        
+          
+
+
+<li class="h4">
+  <a href="/2019/01/08/Slayerpart3/" data-flip="title">
+    <span>Slaying the Top 2000 Part 2: Names and Emails</span>
+  </a>
+  <small><time datetime="2019-01-08T00:00:00+01:00">
+    08 Jan 2019
+  </time></small>
+</li>
+
+        
+      
+        
           
           
         
@@ -364,9 +433,9 @@ and things I generally find interesting to write about. If you have any question
 
 <li class="h4">
   <a href="/2018/12/08/Slayer/" data-flip="title">
-    <span>Slaying the Top 2000 Part 1</span>
+    <span>Slaying the Top 2000: Part 1</span>
   </a>
-  <small><time datetime="2018-12-08T00:00:00+06:30">
+  <small><time datetime="2018-12-08T00:00:00+01:00">
     08 Dec 2018
   </time></small>
 </li>
@@ -419,11 +488,11 @@ and things I generally find interesting to write about. If you have any question
     </li>
   
     <li>
-      <a class="sidebar-nav-item" href="/about/">About</a>
+      <a class="sidebar-nav-item" href="/docs/6.6.1/">Documentation</a>
     </li>
   
     <li>
-      <a class="sidebar-nav-item" href="/docs/6.6.1/">Documentation</a>
+      <a class="sidebar-nav-item" href="/about/">About</a>
     </li>
   
 </ul>
