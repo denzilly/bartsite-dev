@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Slaying the Top 2000 Part 2: Names and Emails'
-tags: [slayer]
+tags: Programming Music
 ---
 
 Welcome back to this short write-up of the top2000 Slayer voter! In this installment, we will look more closely at the part of the script that generates random names and email addresses.
@@ -92,4 +92,4 @@ Now that we have a "real" sounding Dutch name, as well as a disposable email add
 
 ## Now What?
 
-We have sent through our song choices and entered the requested personal information to vote, what could possibly be left? As you would expect from such a reputable institution, there is a final familiar layer of protection to would-be spammers--the dreaded reCAPTCHA. To be fair--this is where the project stalled (read: crashed and burned), but if you are interested in potential subversion strategies and theories, read on to part 3.
+We have sent through our song choices and entered the requested personal information to vote, what could possibly be left? As you would expect from such a reputable institution, there is a final familiar layer of protection to would-be spammers--the dreaded reCAPTCHA. To be fair--this is where the project stalled (read: crashed and burned), but if you are interested in potential subversion strategies and theories, read on to [part 3.](https://denzilly.github.io/2019/01/08/Slayerpart3/).
