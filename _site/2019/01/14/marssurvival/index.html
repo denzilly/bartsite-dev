@@ -31,28 +31,26 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Slaying the Top 2000: Part 1 &middot; Bart Timmer</title>
+  <title>Riddle: Surviving on Mars &middot; Bart Timmer</title>
 
 
 
 <meta name="description" content="
-Photo credit: Fred Pessaro
+All my makerbots are broken
 
 ">
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/2018/12/08/Slayer/">
+<link rel="canonical" href="http://localhost:4000/2019/01/14/marssurvival/">
 
 <link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/2018/11/30/origins/">
+  <link rel="prev" href="http://localhost:4000/2019/01/08/Slayerpart3/">
 
 
-
-  <link rel="next" href="http://localhost:4000/2018/12/22/Slayerpart2/">
 
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -165,16 +163,16 @@ Photo credit: Fred Pessaro
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.png">
       
 
-<article id="post-2018/12/08/Slayer" class="post" role="article">
+<article id="post-2019/01/14/marssurvival" class="post" role="article">
   <header>
     <h1 class="post-title">
       
-        Slaying the Top 2000: Part 1
+        Riddle: Surviving on Mars
       
     </h1>
 
     <p class="post-date heading">
-      <time datetime="2018-12-08T00:00:00+01:00">08 Dec 2018</time>
+      <time datetime="2019-01-14T00:00:00+01:00">14 Jan 2019</time>
       
 
 
@@ -197,7 +195,7 @@ Photo credit: Fred Pessaro
 
 
 
-on <span>Programming</span>, <span>Music</span>
+on <span>Programming</span>
 
     </p>
 
@@ -208,139 +206,155 @@ on <span>Programming</span>, <span>Music</span>
   </header>
 
   
-    <p align="middle"><img src="https://i.imgur.com/pORSkk1.jpg" alt="Tom Araya" /></p>
-<p style="color:gray; font-size: 80%; text-align: center;">Photo credit: <a href="https://www.instagram.com/jackpotplus/?hl=en">Fred Pessaro</a></p>
+    <p align="middle"><img src="https://i.imgur.com/4npodS6.jpg" alt="martian" /></p>
+<p style="color:gray; font-size: 80%; text-align: center;"><em>All my makerbots are broken</em></p>
 
-<p>What if it were possible to (hypothetically) overthrow the top 2000 using a couple of python scripts running in tandem, and in doing so start the new year off with something different?</p>
+<p>This is a solution attempt to a riddle originally posted on <a href="https://FiveThirtyEight.com">FiveThirtyEight</a> <a href="https://fivethirtyeight.com/features/in-space-no-one-can-hear-your-3d-printer-die/">here</a>. I recently discovered their weekly “riddlers”, and really enjoyed trying to figure this one out!</p>
 
-<p>For nearly 20 years now, the NPO2’s top 2000 marathon radio program has been a staple of a Dutch new year’s eve. Remarkably,
-last year’s edition was listened to by <strong>11.3 million</strong> people, or some 76% of the population aged 10 or older. In comparison, the King’s 2017 christmas address drew a mere million viewers.</p>
+<h3 id="the-premise">The Premise</h3>
 
-<p align="middle"><img src="https://i.imgur.com/yC3C4f6.jpg" alt="Willem" /></p>
-<p style="color:gray; font-size: 80%; text-align: center;"><em>Unimpressed</em></p>
+<p>You are an astronaut, trying to survive on Mars until you are relieved by the next crew in 5 years time (1,825 earth days, excluding leap years).</p>
 
-<p>The mere suggestion of manipulating the results of this list drew a good friend to describe it as a sacred national institution, and that anything of the sort would be akin to high treason.</p>
+<p>You live in a habitation pod that has a series of critical life support components, as well as 3 3D printers to manufacture parts and additional supplies that you might need. The life support infrastructure is essential in providing you with food, water, and breathable atmosphere.</p>
 
-<p>Don’t get me wrong, the idea behind the top 2000 is pretty compelling and wholesome, but to be frank, the top of this list has met with little variation since it’s inception. Indeed, anyone who knows anything about this list, knows that Queen’s <em>Bohemian Rhapsody</em> has been in the number 1 spot almost every single time, otherwise taking second place. This being the crown jewel of repetition, the top 10 is otherwise populated by songs that you also loved to hear, the first 14 times you heard them. Such hotel-lobby bangers as <em>Hotel California</em>, <em>Piano Man</em>, and <em>November Rain</em> all tend to come back, year after year.</p>
+<p>Your 3D printers help you to fabricate parts, should the life support equipment break down. They can also be used to make parts for eachother, should one of the printers break down. You cannot scavenge them for parts, as they are made by different manufacturers; thus printing is your only option. Each 3D printer can make <strong>(1)</strong> part per day</p>
 
-<p>Enter Slayer. A band whose reputation precedes it as one of the heaviest, fastest, and most sonically abraisive acts in modern music. Celebrated by metalheads of all cultures and origins as one of the groups to have established the thrash metal movement, their music has inspired an entire generation of musicians, and united lovers of heavy music all over the globe.</p>
+<p>One part of your critical life support systems is guaranteed to fail <strong>daily</strong>, requiring a 3D printer to spend a day replacing said part.</p>
 
-<p>Why not try and take the #1 spot away from Freddie, and see if we could celebrate everything Slayer has done in the year that they choose to hang up their guitars?</p>
+<p>Your 3D printers have fixed probabilities to fail on a given day, requiring a new part:</p>
+<ul>
+  <li>Printer 1 : 10%</li>
+  <li>Printer 2 : 7.5%</li>
+  <li>Printer 3 : 5%</li>
+</ul>
 
-<h2 id="goals-and-requirements">Goals and Requirements</h2>
+<p><em>What is the probability that you will survive the full 1,825 days?</em></p>
 
-<p>The plan had a simple goal: vote as many times as <del>humanly</del> possible for the Slayer song “Angel of Death”, with the hope of cracking the top 10. Since time is short, and I’m not completely aware of the internal anti-botting measures in place on the voting website, I decided to use the <a href="https://www.seleniumhq.org/">Selenium</a> web-driver to autonomously steer a  browser into doing my bidding, and enter information into the fields of my choosing. The main goal of this project was to help me brush up on a bit of python, since actually putting this into action (god forbid it worked) would be a gross violation of the ToC and possibly illegal.</p>
+<h3 id="solution-attempt">Solution attempt</h3>
 
-<p>The top 2000 voting schema works as follows:</p>
+<p>There are two ways to solve this problem–theoretically or empirically. I opted for the latter because I thought it might be more interesting to brute force my way to a probability of survival by modeling the situation programatically.</p>
+
+<p>I decided to structure everything around a daily cycle, under certain assumptions.</p>
+
+<ul>
+  <li>
+    <p>We check whether or not the printers are functional every morning (first for loop)</p>
+  </li>
+  <li>
+    <p>Based on the newly determined printer status, we try to fix broken printers if possible.</p>
+  </li>
+  <li>
+    <p>We cannot pre-fabricate parts, as we are not given details on how many parts each machine contains etc.</p>
+  </li>
+</ul>
+
+<p>This leaves us with two for loops, as seen in the code block below (within the while loop).</p>
+
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+
+<span class="c">#Probablilities</span>
+
+<span class="n">p1break</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">p2break</span> <span class="o">=</span> <span class="mf">0.075</span>
+<span class="n">p3break</span> <span class="o">=</span> <span class="mf">0.05</span>
+
+
+
+<span class="c">#One day</span>
+<span class="k">def</span> <span class="nf">survive</span><span class="p">():</span>
+
+    <span class="c">#Printer status</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c">#Probabilities out of 1000 to use integers</span>
+    <span class="n">probs</span> <span class="o">=</span> <span class="p">[</span><span class="n">p1break</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">p2break</span><span class="o">*</span><span class="mi">1000</span><span class="p">,</span> <span class="n">p3break</span><span class="o">*</span><span class="mi">1000</span><span class="p">]</span>
+    <span class="n">days</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+        <span class="c">#Check machine status on given day, if working</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">probs</span><span class="p">[</span><span class="n">idx</span><span class="p">]):</span>
+                    <span class="n">status</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="c">#If machine is broken, test if it can be fixed</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+
+            <span class="c">#Count how many of the other machines are working</span>
+                <span class="n">working</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">status</span><span class="p">:</span>
+                    <span class="n">working</span> <span class="o">=</span> <span class="n">working</span> <span class="o">+</span> <span class="n">x</span>
+                <span class="c">#No machines working, you' dead sucka</span>
+                <span class="k">if</span> <span class="n">working</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">days</span>
+                <span class="c">#2 Machines working, you can be fixed!</span>
+                <span class="k">if</span> <span class="n">working</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="n">status</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">days</span> <span class="o">=</span> <span class="n">days</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre>
+</div>
+
+<p>The while loop runs the survive function until, well, you’re no longer surviving. The first loop checks the status of each printer, which is previously initialised at 1. Using probabilities out of 1000 (to maintain integer values), the script calls a random number between 1-1000. If this value falls below the pre-specified probability level, the printer is considered broken and its status is set to 0.</p>
+
+<p>The second loop determines what we can potentially do with any broken printers. There are 3 cases:</p>
 
 <ol>
-  <li>Vote for a minimum of 5 songs of your choosing</li>
-  <li>Enter your motivation for choosing said songs (optional)</li>
-  <li>Enter your full name and e-mail address</li>
-  <li>Accept the ToC and complete a reCAPTCHA</li>
+  <li>
+    <p>All 3 printers are broken, working == 0. You can’t replace life support parts and are therefore dead. The return statement here breaks the while loop, and returns the total number of days that you survived.</p>
+  </li>
+  <li>2 printers are broken, working == 1. Your remaining machine is dedicated to fixing life support, and cannot be used to repair the other printers. You are waiting, hoping that this lone printer will last you the 5 years. This case is not coded, because it is handled by the first loop.</li>
+  <li>1 printer is broken, working == 2. You have 2 operational printers, of which one will be dedicated to life support parts, and the second can be used to restore your broken printer.</li>
 </ol>
 
-<p>At this point, the first challenges present themselves.</p>
+<p>Finally, a day is added to the counter.</p>
 
-<ul>
-  <li>We need to vote for 4 other songs, if we choose the same ones each time, then they will get an equal number of votes. Also, we should probably randomize Slayer’s position in the order to be more inconspicuous.</li>
-  <li>We need a bunch of generic names, as well as email addresses</li>
-  <li>We need to find a way to circumvent the CAPTCHA</li>
-  <li>The script needs to execute in as little time as possible, such that it can complete as often as possible.</li>
-</ul>
+<p>That’s basically it!</p>
 
-<p>First off though, we need to set up the webdriver.</p>
+<p>The following block runs the program for as many iterations as necessary to determine an appropriate survival probability, noting down the number of days survived in each instance.
+In the end, it reports the average number of days survived, number of times you made it to 5 years, as well as estimated probability of survival.</p>
 
-<h2 id="set-up">Set-up</h2>
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#This block runs survive() multiple times and tallies the results</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">avgdays</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">survival</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">days</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">iterations</span> <span class="o">=</span> <span class="mi">100000</span>
 
-<p>To get started, we imported the relevant packages and initialised the webdriver to work with firefox.</p>
+<span class="k">while</span><span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="n">iterations</span><span class="p">):</span>
+    <span class="n">surviveddays</span> <span class="o">=</span> <span class="n">survive</span><span class="p">()</span>
+    <span class="n">avgdays</span> <span class="o">=</span> <span class="n">avgdays</span> <span class="o">+</span> <span class="n">surviveddays</span>
+    <span class="n">days</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">surviveddays</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">surviveddays</span> <span class="o">&gt;=</span> <span class="mi">1825</span><span class="p">:</span>
+        <span class="n">survival</span> <span class="o">=</span> <span class="n">survival</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">"You survived on average </span><span class="si">%</span><span class="s">s days after </span><span class="si">%</span><span class="s">s iterations"</span> <span class="o">%</span> <span class="p">((</span><span class="n">avgdays</span><span class="o">/</span><span class="n">iterations</span><span class="p">),(</span><span class="n">iterations</span><span class="p">)))</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">"Number of times survived = </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="n">survival</span><span class="p">)</span>
+<span class="k">print</span> <span class="p">(</span><span class="s">"Your survival probability is </span><span class="si">%</span><span class="s">s</span><span class="si">%%</span><span class="s">"</span> <span class="o">%</span> <span class="p">((</span><span class="n">survival</span><span class="o">/</span><span class="n">iterations</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
 
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
-<span class="kn">from</span> <span class="nn">selenium.webdriver.common.action_chains</span> <span class="kn">import</span> <span class="n">ActionChains</span>
-
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">csv</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-
-
-<span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
-<span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://stem.nporadio2.nl/top2000/1"</span><span class="p">)</span>
 </code></pre>
 </div>
 
-<p>The Selenium webdriver allows you to call all sorts of actions on elements on a webpage. In order to do this, you need to provide it with the location of the element that you want to manipulate. This can be by searching through HTML tags based on class or id, but I have found using XPath to be the quickest for the selection of specific elements on a page.</p>
-
-<p>To find the XPath of an object on a webpage, simply inspect it in your browser. Firefox and Chrome both provide a handy copy XPath option that allows you to jam it directly into a <em>find_element_by_xpath</em> in your code. As an example, clicking a button would look something like this:</p>
-
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">"XPATH_TO_BUTTON"</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+<p>I found that with 1 million iterations, I tend to survive on average just 78 days and change, nowhere close!</p>
+<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="n">You</span> <span class="n">survived</span> <span class="n">on</span> <span class="n">average</span> <span class="mf">78.881304</span> <span class="n">days</span> <span class="n">after</span> <span class="mi">1000000</span> <span class="n">iterations</span>
+<span class="n">Number</span> <span class="n">of</span> <span class="n">times</span> <span class="n">survived</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Your</span> <span class="n">survival</span> <span class="n">probability</span> <span class="ow">is</span> <span class="mf">0.0</span><span class="o">%</span>
 </code></pre>
 </div>
 
-<h2 id="voting--selecting-songs">Voting &amp; Selecting songs</h2>
+<p align="middle"><img src="https://i.imgur.com/ka7WXeU.png" alt="histogram" /></p>
+<p style="color:gray; font-size: 80%; text-align: center;"><em>Bleak</em></p>
 
-<p>The initial voting procedure is relatively simple–we are required to select a minimum of 5 songs from an interactive applet. The window has a search field, as well as a random selection of popular choices that populates the search results area when no query is entered.</p>
+<p>The histogram provides illustrative context to our lack of hope, clearly showing that we are more than pretty unlikely to keep our pod running long enough.</p>
 
-<p>This essentially comes down to instructing Selenium to manipulate the browser automatically, in the same way that a ‘real’ voter would otherwise do this by manually. We want to vote for the minimum 5 songs, of which one will be <em>Angel of Death</em>.</p>
+<p>Theoretically speaking however, there must be a chance that we survive this ordeal…</p>
 
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#Voting</span>
-
-<span class="c">#Randomly select position of slayer</span>
-  <span class="n">position</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-
-  <span class="k">print</span><span class="p">(</span><span class="s">"Position is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">position</span><span class="p">))</span>   
-  <span class="c">#Randomised position of slayer song in the list</span>
-  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
-      <span class="c">#Vote for Slayer</span>
-      <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">position</span><span class="p">:</span>
-          <span class="c">#select field and search slayer if position matches x</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, 0)"</span><span class="p">)</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">textentry</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">"slayer"</span><span class="p">)</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">slayerbtn</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
-
-          <span class="c">#clear the search field to return the list of default songs</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">textentry</span><span class="p">)</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
-
-      <span class="c">#Vote for random song in top of list</span>
-      <span class="k">else</span><span class="p">:</span>
-          <span class="n">currentsong</span> <span class="o">=</span> <span class="s">"/html/body/div[1]/div/div/div[3]/div[2]/div/ul/div/div/li[</span><span class="si">%</span><span class="s">s]/div/div/div/div/div[3]/button[2]"</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">),)</span>
-
-          <span class="c">#if its too far down the list, scroll it into view</span>
-          <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
-              <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, 500)"</span><span class="p">)</span>
-          <span class="c">#Vote for the song</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
-          <span class="c">#vote for a default song</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">currentsong</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
-          <span class="k">print</span><span class="p">(</span><span class="s">"vote </span><span class="si">%</span><span class="s">s was cast"</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,))</span>
-</code></pre>
-</div>
-
-<p>Some notes on this:</p>
-<ul>
-  <li>
-    <p>We need to vote for 4 other songs–obviously not the same ones every time! Luckily, the list of songs that populate the search result field when the search bar is empty seem to be relatively random (or at least don’t seem to repeat very often). As such, we can simply choose 4 of these every time to fill out our minimum 5 votes.</p>
-  </li>
-  <li>
-    <p>You will notice many blocks in the code below containing <em>time.sleep(wtl)</em> or <em>time.sleep(wts)</em>. This is a simple function that allows me to tell the browser to wait for a predetermined amount of time. In this case, I have wtl and wts (wait-long and short) set to 1.5 and 0.7 seconds respectively. This is sometimes necessary to allow all elements on a page to load, for example after searching for a song or clicking through to the next form. There are far cleaner ways of doing this, but I was in a hurry to try and get this together in time!</p>
-  </li>
-  <li>
-    <p>It might seem somewhat suspicious if our Slayer song comes in the same position (of the 5 songs) each time we vote. Even though they are not ranked, it might alleviate suspicion if it isn’t in position <em>x</em> each time. The beginning of the function generates a random integer <em>position</em> between 1 and 5 inclusive, which will denote the position of <em>Angel of Death</em> in our 5 songs. The function then loops through possible positions, either voting for <em>Angel of Death</em> or one of the default songs from the list.</p>
-  </li>
-  <li>
-    <p>I have pasted all of the necessary XPATHs into a neat little block elsewhere at the top of my code and stored them as strings. These have been referenced in the find_elment calls (e.g. textentry, slayerbtn)</p>
-  </li>
-</ul>
-
-<p>This is essentially how the voting part of the webdriver works. In the <a href="https://denzilly.github.io/2018/12/22/Slayerpart2/">next installment</a>, we will look at how to generate names and emails, as well as plans for the future!</p>
+<p>For the full code, as well as a snippet to generate a histogram, see my <a href="https://github.com/denzilly/riddles">github page</a>.</p>
 
   
 
@@ -455,21 +469,8 @@ and things I generally find interesting to write about. If you have any question
       
       
         
-        
           
-
-
-<li class="h4">
-  <a href="/2019/01/14/marssurvival/" data-flip="title">
-    <span>Riddle: Surviving on Mars</span>
-  </a>
-  <small><time datetime="2019-01-14T00:00:00+01:00">
-    14 Jan 2019
-  </time></small>
-</li>
-
-        
-      
+          
         
         
           
@@ -503,8 +504,21 @@ and things I generally find interesting to write about. If you have any question
         
       
         
+        
           
-          
+
+
+<li class="h4">
+  <a href="/2018/12/08/Slayer/" data-flip="title">
+    <span>Slaying the Top 2000: Part 1</span>
+  </a>
+  <small><time datetime="2018-12-08T00:00:00+01:00">
+    08 Dec 2018
+  </time></small>
+</li>
+
+        
+      
     
   </ul>
 </aside>

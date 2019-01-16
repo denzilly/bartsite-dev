@@ -133,11 +133,24 @@ print ("Your survival probability is %s%%" % ((survival/iterations)*100))
 
 ~~~
 
-I found that with 1 million iterations, I tend to survive on average just 78 days and change, nowhere close! There is however, definitely a chance to survive, given the circumstances.
-
+I found that with 1 million iterations, I tend to survive on average just 78 days and change, nowhere close!
 ~~~py
-
+You survived on average 78.881304 days after 1000000 iterations
+Number of times survived = 0
+Your survival probability is 0.0%
 ~~~
+
+![histogram](https://i.imgur.com/ka7WXeU.png)
+{: align="middle"}
+*Bleak*
+{: style="color:gray; font-size: 80%; text-align: center;"}
+
+The histogram provides illustrative context to our lack of hope, clearly showing that we are more than pretty unlikely to keep our pod running long enough.
+
+Theoretically speaking however, there must be a chance that we survive this ordeal...
+
+
+
 
 
 

@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/tag/hyde/</loc>
-<lastmod>2019-01-15T10:57:04+01:00</lastmod>
+<lastmod>2019-01-15T15:53:06+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tag/hydejack/</loc>
-<lastmod>2019-01-15T10:57:04+01:00</lastmod>
+<lastmod>2019-01-15T15:53:06+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2018/11/30/origins/</loc>
@@ -23,6 +23,10 @@
 <url>
 <loc>http://localhost:4000/2019/01/08/Slayerpart3/</loc>
 <lastmod>2019-01-08T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/01/14/marssurvival/</loc>
+<lastmod>2019-01-14T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/hyde-v1/</loc>
