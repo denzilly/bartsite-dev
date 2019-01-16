@@ -19,6 +19,12 @@ tagline:             A page about me and my stuff.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:       Interests, projects, and nonsense.
 
+defaults:
+  - scope:
+      type: posts
+    values:
+      comments: true
+
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name:              Bart Timmer
@@ -46,7 +52,7 @@ google_fonts:        Roboto+Slab:700,400,400i,700,700i
 google_analytics:    <UA-XXXXXXXX-X>
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname:    <username>
+disqus_shortname:    bart-timmer.disqus.com
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; Bart Timmer 2019. All rights reserved.'

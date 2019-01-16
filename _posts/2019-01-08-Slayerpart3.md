@@ -4,11 +4,10 @@ title: 'Slaying the Top 2000 Part 3: reCAPTCHA'
 tags: Programming Music
 ---
 
-![RIP](https://i.imgur.com/z3iEySE.jpg)
+![RIP](https://i.imgur.com/EshyYPS.jpg)
 {: align="middle"}
 *All hope is lost.*
-{: style="color:gray; font-size: 80%; text-align: center;"}
-
+{: style="color: gray; font-size: 80%; text-align: center;"}
 Unfortunately, this is where the project came to an end. Google's secret weapon was too much to handle, an insurmountable obstacle. Crafted in the heart of mount Fuji by evil samurai programmers, reCAPTCHA is actually a pretty neat piece of technology, and more advanced than you would think. This post will cover a little bit of how CAPTCHA works, as well as a possible workaround.
 
 The most modern iteration of CAPTCHA has a wide array of tools to detect whether or not the user is an actual human (of which not all are known, as far as I'm aware.) It looks at things like how you move your mouse, or how you type, but also your cached browsing history/cookies to see if you have been acting "human" on the internet (browsing social media, reading the news, researching black market kidney prices).
