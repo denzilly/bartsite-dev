@@ -29,6 +29,7 @@ defaults:
 author:
   name:              Bart Timmer
   email:             btimmer313@gmail.com
+  picture:           /assets/img/me.png
 
 # Fallback image and color
 image:               /assets/img/nap.png

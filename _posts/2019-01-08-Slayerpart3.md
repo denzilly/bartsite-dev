@@ -32,7 +32,7 @@ Given this foolproof detection system, surely this is a bust?
 
 ![slayerfan](https://i.imgur.com/HfhUyEr.jpg)
 {: align="middle"}
-A typical Slayer fan, deep in thought.
+A typical metal fan, deep in thought.
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 ## Speech-to-Text Solver
