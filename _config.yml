@@ -29,7 +29,10 @@ defaults:
 author:
   name:              Bart Timmer
   email:             btimmer313@gmail.com
-  picture:           /assets/img/me.png
+  picture:
+    path:           /assets/img/me.png
+    srcset:
+      1x:           /assets/img/me.png
 
 # Fallback image and color
 image:               /assets/img/nap.png
@@ -53,8 +56,8 @@ google_fonts:        Roboto+Slab:700,400,400i,700,700i
 google_analytics:    <UA-XXXXXXXX-X>
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname:    bart-timmer.disqus.com
-disqus: bart-timmer.disqus.com
+disqus_shortname:    bart-timmer
+disqus: bart-timmer
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; Bart Timmer 2019. All rights reserved.'

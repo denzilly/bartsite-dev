@@ -1,25 +1,15 @@
 ---
 layout: welcome
-title: Welcome
+title: Home
 
 selected_posts:
-  - _posts/2017-07-27-gems.md
-  - _posts/2017-06-21-related-projects-and-data-tables.md
-  - _posts/2017-06-06-third-party-scripts.md
-  - _posts/2017-05-03-javascripten.md
-  - _posts/2012-02-07-example-content.md
+  - _posts/2019-01-14-marssurvival.md
+  - _posts/2018-12-08-Slayer.md
+  - _posts/2018-11-30-origins.md
+
 
 more_posts: posts.md
+
+selected_projects:
+
 ---
-
-
-
-
-
-[blog]: blog.md
-[portfolio]: projects.md
-[resume]: resume.md
-[docs]: docs/6.6.0/index.md
-[installation]: docs/6.6.0/installation.md
-[configuration]: docs/6.6.0/configuration.md
-[migration]: docs/6.6.0/migration.md
