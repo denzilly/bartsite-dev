@@ -54,6 +54,7 @@ google_analytics:    <UA-XXXXXXXX-X>
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus_shortname:    bart-timmer.disqus.com
+disqus: bart-timmer.disqus.com
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; Bart Timmer 2019. All rights reserved.'
