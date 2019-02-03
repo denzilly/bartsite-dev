@@ -10,6 +10,5 @@ selected_posts:
 
 more_posts: posts.md
 
-selected_projects:
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Riddle: Surviving on Mars'
+title: 'Riddle: Three Deck Monté'
 tags: Programming
 ---
 
@@ -43,12 +43,13 @@ There are a key elements of this problem to break down, and that end up drastica
 Each draw of two cards has 9 possible outcomes. The fact that this total is odd, implies that the chance of success is always stacked in one player's favor.
 Tabulating possible outcomes reveals that the decks are selected very specifically, such that we end up with a sort-of  "rock-paper-scissors" hierarchy between the decks.
 
-Each card is capable of being superior to either 0, 1, 2, or 3 of the possible cards drawn from the opponent's chosen deck. Adding these up reveals the relative matchup in terms of probability of success on the first draw.
+Each card is capable of being superior to either 0, 1, 2, or 3 of the possible cards drawn from the opponent's chosen deck. Adding these up reveals the relative matchup in terms of probability of success on the first draw. The chart below shows potential matchups based on deck choices. It is quickly apparent that certain deck choices (responses from Monté), are better than others, and that there is a clear best response deck to each deck chosen by the player. These are outlined in red (note that W/L is from the player's perspective, so it is in Monté's interest to have more Ls).
 
 ![Best-Responses](https://i.imgur.com/wrCC2B6.png)
 {: align="middle"}
 Monté's best responses highlighted to each deck choice are outlined in red. W/L is shown from Player's perspective.
 
+What is especially poignant about the 
 
 
 
