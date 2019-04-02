@@ -44,16 +44,16 @@ What if it were possible to (hypothetically) overthrow the top 2000 using a coup
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/2018/12/08/Slayer/">
+<link rel="canonical" href="http://localhost:4000/2018/12/08/Slayer/">
 
-<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="https://denzilly.github.io/feed.xml">
-
-
-  <link rel="prev" href="https://denzilly.github.io/2018/11/30/origins/">
+<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
 
 
+  <link rel="prev" href="http://localhost:4000/2018/11/30/origins/">
 
-  <link rel="next" href="https://denzilly.github.io/2018/12/22/Slayerpart2/">
+
+
+  <link rel="next" href="http://localhost:4000/2018/12/22/Slayerpart2/">
 
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -255,7 +255,7 @@ last year’s edition was listened to by <strong>11.3 million</strong> people, o
 
 <p>To get started, we imported the relevant packages and initialised the webdriver to work with firefox.</p>
 
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
 <span class="kn">from</span> <span class="nn">selenium.webdriver.common.action_chains</span> <span class="kn">import</span> <span class="n">ActionChains</span>
 
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span>
@@ -269,16 +269,14 @@ last year’s edition was listened to by <strong>11.3 million</strong> people, o
 
 <span class="n">driver</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">()</span>
 <span class="n">driver</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://stem.nporadio2.nl/top2000/1"</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The Selenium webdriver allows you to call all sorts of actions on elements on a webpage. In order to do this, you need to provide it with the location of the element that you want to manipulate. This can be by searching through HTML tags based on class or id, but I have found using XPath to be the quickest for the selection of specific elements on a page.</p>
 
 <p>To find the XPath of an object on a webpage, simply inspect it in your browser. Firefox and Chrome both provide a handy copy XPath option that allows you to jam it directly into a <em>find_element_by_xpath</em> in your code. As an example, clicking a button would look something like this:</p>
 
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">"XPATH_TO_BUTTON"</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
-</code></pre>
-</div>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="s">"XPATH_TO_BUTTON"</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+</code></pre></div></div>
 
 <h2 id="voting--selecting-songs">Voting &amp; Selecting songs</h2>
 
@@ -286,43 +284,42 @@ last year’s edition was listened to by <strong>11.3 million</strong> people, o
 
 <p>This essentially comes down to instructing Selenium to manipulate the browser automatically, in the same way that a ‘real’ voter would otherwise do this by manually. We want to vote for the minimum 5 songs, of which one will be <em>Angel of Death</em>.</p>
 
-<div class="language-py highlighter-rouge"><pre class="highlight"><code><span class="c">#Voting</span>
-
-<span class="c">#Randomly select position of slayer</span>
-  <span class="n">position</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Voting
+</span>
+<span class="c1">#Randomly select position of slayer
+</span>  <span class="n">position</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 
   <span class="k">print</span><span class="p">(</span><span class="s">"Position is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">position</span><span class="p">))</span>   
-  <span class="c">#Randomised position of slayer song in the list</span>
-  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
-      <span class="c">#Vote for Slayer</span>
-      <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">position</span><span class="p">:</span>
-          <span class="c">#select field and search slayer if position matches x</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, 0)"</span><span class="p">)</span>
+  <span class="c1">#Randomised position of slayer song in the list
+</span>  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+      <span class="c1">#Vote for Slayer
+</span>      <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">position</span><span class="p">:</span>
+          <span class="c1">#select field and search slayer if position matches x
+</span>          <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, 0)"</span><span class="p">)</span>
           <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
           <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">textentry</span><span class="p">)</span><span class="o">.</span><span class="n">send_keys</span><span class="p">(</span><span class="s">"slayer"</span><span class="p">)</span>
           <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
           <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">slayerbtn</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
           <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
 
-          <span class="c">#clear the search field to return the list of default songs</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">textentry</span><span class="p">)</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+          <span class="c1">#clear the search field to return the list of default songs
+</span>          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">textentry</span><span class="p">)</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
           <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wtl</span><span class="p">)</span>
 
-      <span class="c">#Vote for random song in top of list</span>
-      <span class="k">else</span><span class="p">:</span>
+      <span class="c1">#Vote for random song in top of list
+</span>      <span class="k">else</span><span class="p">:</span>
           <span class="n">currentsong</span> <span class="o">=</span> <span class="s">"/html/body/div[1]/div/div/div[3]/div[2]/div/ul/div/div/li[</span><span class="si">%</span><span class="s">s]/div/div/div/div/div[3]/button[2]"</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">),)</span>
 
-          <span class="c">#if its too far down the list, scroll it into view</span>
-          <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+          <span class="c1">#if its too far down the list, scroll it into view
+</span>          <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
               <span class="n">driver</span><span class="o">.</span><span class="n">execute_script</span><span class="p">(</span><span class="s">"window.scrollTo(0, 500)"</span><span class="p">)</span>
-          <span class="c">#Vote for the song</span>
-          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
-          <span class="c">#vote for a default song</span>
-          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">currentsong</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
+          <span class="c1">#Vote for the song
+</span>          <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
+          <span class="c1">#vote for a default song
+</span>          <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_xpath</span><span class="p">(</span><span class="n">currentsong</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span>
           <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">wts</span><span class="p">)</span>
           <span class="k">print</span><span class="p">(</span><span class="s">"vote </span><span class="si">%</span><span class="s">s was cast"</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="p">,))</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Some notes on this:</p>
 <ul>
@@ -460,11 +457,43 @@ and things I generally find interesting to write about. If you have any question
 
 
 <li class="h4">
-  <a href="/2019/01/14/marssurvival/" data-flip="title">
+  <a href="/2019/02/02/threecardmonte/" data-flip="title">
+    <span>Riddle: Three Deck Monté</span>
+  </a>
+  <small><time datetime="2019-02-02T00:00:00+01:00">
+    02 Feb 2019
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/2019/01/28/Myanmarmetals/" data-flip="title">
+    <span>Myanmar Metals: A Promising Look </span>
+  </a>
+  <small><time datetime="2019-01-28T00:00:00+01:00">
+    28 Jan 2019
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/2019/01/22/pimotor/" data-flip="title">
     <span>Riddle: Surviving on Mars</span>
   </a>
-  <small><time datetime="2019-01-14T00:00:00+01:00">
-    14 Jan 2019
+  <small><time datetime="2019-01-22T00:00:00+01:00">
+    22 Jan 2019
   </time></small>
 </li>
 
@@ -472,39 +501,7 @@ and things I generally find interesting to write about. If you have any question
       
         
         
-          
-
-
-<li class="h4">
-  <a href="/2019/01/08/Slayerpart3/" data-flip="title">
-    <span>Slaying the Top 2000 Part 3: reCAPTCHA</span>
-  </a>
-  <small><time datetime="2019-01-08T00:00:00+01:00">
-    08 Jan 2019
-  </time></small>
-</li>
-
-        
       
-        
-        
-          
-
-
-<li class="h4">
-  <a href="/2018/12/22/Slayerpart2/" data-flip="title">
-    <span>Slaying the Top 2000 Part 2: Names and Emails</span>
-  </a>
-  <small><time datetime="2018-12-22T00:00:00+01:00">
-    22 Dec 2018
-  </time></small>
-</li>
-
-        
-      
-        
-          
-          
     
   </ul>
 </aside>
@@ -519,7 +516,7 @@ and things I generally find interesting to write about. If you have any question
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Slaying the Top 2000: Part 1",this.page.identifier="/2018/12/08/Slayer",this.page.url="https://denzilly.github.io/2018/12/08/Slayer/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Slaying the Top 2000: Part 1",this.page.identifier="/2018/12/08/Slayer",this.page.url="http://localhost:4000/2018/12/08/Slayer/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

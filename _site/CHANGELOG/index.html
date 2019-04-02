@@ -41,9 +41,9 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/CHANGELOG/">
+<link rel="canonical" href="http://localhost:4000/CHANGELOG/">
 
-<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="https://denzilly.github.io/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
 
 
 
@@ -200,7 +200,7 @@ Instead, they are now located in the assets folder and managed via Bower.</li>
 They have been added to the <code class="highlighter-rouge">Gemfile</code> and <code class="highlighter-rouge">_config.yml</code>.
 Note that existing users need to update their <code class="highlighter-rouge">_config.yml</code>:</p>
 
-    <div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">gems</span><span class="pi">:</span>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">gems</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">jekyll-default-layout</span> <span class="c1"># new</span>
   <span class="pi">-</span> <span class="s">jekyll-feed</span>
   <span class="pi">-</span> <span class="s">jekyll-optional-front-matter</span> <span class="c1"># new</span>
@@ -208,8 +208,7 @@ Note that existing users need to update their <code class="highlighter-rouge">_c
   <span class="pi">-</span> <span class="s">jekyll-redirect-from</span>
   <span class="pi">-</span> <span class="s">jekyll-relative-links</span> <span class="c1"># new</span>
   <span class="pi">-</span> <span class="s">jekyll-sitemap</span>
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Added <code class="highlighter-rouge">licenses</code> folder that includes the full license texts of licenses mentioned in <code class="highlighter-rouge">NOTICE.md</code>.</li>
   <li>
@@ -218,24 +217,23 @@ Using <code class="highlighter-rouge">_data/authors.yml</code> is still recommen
 but this option is more convenient when setting up a quick (project-) page using the gem-based theme.
 Also, a mini-version of <code class="highlighter-rouge">_data/social.yml</code> can be provided as part <code class="highlighter-rouge">_config.yml</code>, e.g.:</p>
 
-    <div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">author</span><span class="pi">:</span>
-  <span class="s">social</span><span class="pi">:</span>
-    <span class="s">github</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack</span>
-    <span class="s">npm</span><span class="pi">:</span> <span class="s">https://www.npmjs.com/package/hydejack</span>
-    <span class="s">download</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack/archive/v6.5.0.zip</span>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
+  <span class="na">social</span><span class="pi">:</span>
+    <span class="na">github</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack</span>
+    <span class="na">npm</span><span class="pi">:</span> <span class="s">https://www.npmjs.com/package/hydejack</span>
+    <span class="na">download</span><span class="pi">:</span> <span class="s">https://github.com/qwtel/hydejack/archive/v6.5.0.zip</span>
 
-<span class="s">data_social</span><span class="pi">:</span>
-  <span class="s">github</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">GitHub</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-github</span>
-  <span class="s">npm</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">npm</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-npm</span>
-  <span class="s">download</span><span class="pi">:</span>
-    <span class="s">name</span><span class="pi">:</span> <span class="s">Download</span>
-    <span class="s">icon</span><span class="pi">:</span> <span class="s">icon-box-add</span>
-</code></pre>
-    </div>
+<span class="na">data_social</span><span class="pi">:</span>
+  <span class="na">github</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">GitHub</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">icon-github</span>
+  <span class="na">npm</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">npm</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">icon-npm</span>
+  <span class="na">download</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">Download</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">icon-box-add</span>
+</code></pre></div>    </div>
   </li>
   <li>A download icon has been added to the default icon font and <code class="highlighter-rouge">_data/social.yml</code> has been updated.</li>
   <li>Added <code class="highlighter-rouge">_includes/my-scripts.html</code>, <code class="highlighter-rouge">_sass/my-inline.scss</code> and <code class="highlighter-rouge">_sass/my-style.scss</code> to make it easier to add custom scripts and styles without modifying the source. This is especially handy when using the gem-based version of the theme.</li>
@@ -265,31 +263,27 @@ If you have a <code class="highlighter-rouge">font</code> entry in <code class="
 <h4 id="how-to-restore-the-old-styles">How to restore the old styles</h4>
 <p>If you would like to use the old font, add the following to <code class="highlighter-rouge">_config.yml</code>:</p>
 
-<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">font_heading</span><span class="pi">:</span> <span class="s2">"</span><span class="s">'Roboto</span><span class="nv"> </span><span class="s">Slab',</span><span class="nv"> </span><span class="s">Helvetica,</span><span class="nv"> </span><span class="s">Arial,</span><span class="nv"> </span><span class="s">sans-serif"</span>
-<span class="s">font</span><span class="pi">:</span>         <span class="s2">"</span><span class="s">'Noto</span><span class="nv"> </span><span class="s">Serif',</span><span class="nv"> </span><span class="s">Georgia,</span><span class="nv"> </span><span class="s">serif"</span>
-<span class="s">google_fonts</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Roboto+Slab:700|Noto+Serif:400,400i,700,700i"</span>
-</code></pre>
-</div>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">font_heading</span><span class="pi">:</span> <span class="s2">"</span><span class="s">'Roboto</span><span class="nv"> </span><span class="s">Slab',</span><span class="nv"> </span><span class="s">Helvetica,</span><span class="nv"> </span><span class="s">Arial,</span><span class="nv"> </span><span class="s">sans-serif"</span>
+<span class="na">font</span><span class="pi">:</span>         <span class="s2">"</span><span class="s">'Noto</span><span class="nv"> </span><span class="s">Serif',</span><span class="nv"> </span><span class="s">Georgia,</span><span class="nv"> </span><span class="s">serif"</span>
+<span class="na">google_fonts</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Roboto+Slab:700|Noto+Serif:400,400i,700,700i"</span>
+</code></pre></div></div>
 
 <p>If you were relying on the default setting for the background image, add the following to <code class="highlighter-rouge">_config.yml</code>:</p>
 
-<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">image</span><span class="pi">:</span> <span class="s">/hydejack/assets/img/nap.jpg</span>
-</code></pre>
-</div>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">image</span><span class="pi">:</span> <span class="s">/hydejack/assets/img/nap.jpg</span>
+</code></pre></div></div>
 
 <p>Note that you have to replace <code class="highlighter-rouge">/hydejack</code> with your <code class="highlighter-rouge">baseurl</code>.</p>
 
 <p>To restore the old sidebar, open (or create) <code class="highlighter-rouge">_sass/my-inline.scss</code> and add the following:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@media</span> <span class="n">screen</span> <span class="p">{</span> <span class="nc">.sidebar-sticky</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span> <span class="nl">max-width</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span> <span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">screen</span> <span class="p">{</span> <span class="nc">.sidebar-sticky</span> <span class="p">{</span> <span class="nl">left</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span> <span class="nl">max-width</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="p">}</span> <span class="p">}</span>
+</code></pre></div></div>
 
 <p>To remove the border radius, open (or create) <code class="highlighter-rouge">_sass/my-inline.scss</code> and add the following:</p>
 
-<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.card</span><span class="o">,</span> <span class="nc">.pagination-item</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
-</code></pre>
-</div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.card</span><span class="o">,</span> <span class="nc">.pagination-item</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span><span class="cp">!important</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
 
 <h2 id="v641">v6.4.1</h2>
 <p class="heading post-date">Jun 23 2017</p>
