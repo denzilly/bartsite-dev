@@ -81,7 +81,7 @@ paginate_path:       '/blog/page-:num/'
 # Set to `true` if you don't want to show an icon after each link that opens to an external site
 # no_mark_external:    true
 
-# Uncomment this line if third party plugins fail to work with dynimically loaded pages
+# Uncomment this line if third party plugins fail to work with dynamically loaded pages
 # disable_push_state:  true
 
 # Uncomment this line if want to disable the touch drawer on mobile
@@ -100,6 +100,9 @@ collections:
     output:          true
   projects:
     permalink:       /projects/:path/
+    output:          true
+  recipes:
+    permalink:       /recipes/:path/
     output:          true
 
 # -----------------------------------------------------------------------------

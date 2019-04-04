@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-01T13:05:51+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bart Timmer</title><subtitle>Interests, projects, and nonsense.</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Riddle: Three Deck Monté</title><link href="http://localhost:4000/2019/02/02/threecardmonte/" rel="alternate" type="text/html" title="Riddle: Three Deck Monté" /><published>2019-02-02T00:00:00+01:00</published><updated>2019-02-02T00:00:00+01:00</updated><id>http://localhost:4000/2019/02/02/threecardmonte</id><content type="html" xml:base="http://localhost:4000/2019/02/02/threecardmonte/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/37bNTq2.jpg&quot; alt=&quot;three-card-monte&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-04T17:30:50+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bart Timmer</title><subtitle>Interests, projects, and nonsense.</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Raspberry Pi Nerf Target - Part 1: Hit-Detection</title><link href="http://localhost:4000/2019/04/02/Pitarget/" rel="alternate" type="text/html" title="Raspberry Pi Nerf Target - Part 1: Hit-Detection" /><published>2019-04-02T00:00:00+02:00</published><updated>2019-04-02T00:00:00+02:00</updated><id>http://localhost:4000/2019/04/02/Pitarget</id><content type="html" xml:base="http://localhost:4000/2019/04/02/Pitarget/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;http://picture&quot; alt=&quot;Pitarget-mkI&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Something something clint eastwood&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As a notorious impulse buyer, I need to periodically satisfy my capitalist urges by throwing some money at senseless gadgets. Rather than approach the subject with any sort of trepidation whatsoever, I try instead to keep the financial damage to a minimum by sticking to the dollar store, or everyone’s favourite Chinese megacorporation, Alibaba. Enter, my latest acquisition:&lt;/p&gt;
+
+&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;http://picture&quot; alt=&quot;Gun&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks, (Jack) Ma’!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, I’m not much of a gun fanatic at all, but I do love a good skills challenge, and quickly ran out of things to shoot in my apartment. Having overcome my apartment’s most threatening nemesis, &lt;em&gt;crack between ceiling and lamp&lt;/em&gt;, I knew I needed to up the ante. Simultaneously, this seemed like the perfect opportunity to put my Raspberry Pi to work, seeing as how it was gathering dust at an alarming rate.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-pitarget&quot;&gt;The PiTarget™&lt;/h3&gt;
+
+&lt;p&gt;Using the rail salvaged from an old printer I had lying around, as well as the side of a vinyl delivery box, the protoype of the PiTarget was born.&lt;/p&gt;
+
+&lt;p&gt;The concept is simple, it’s a moving target with hit-detection for the foam darts shot out by my nerf-like rifle.&lt;/p&gt;
+
+&lt;p&gt;I hope however, to integrate some more interesting concepts along the way to use it as a way to learn more about working with microcontrollers. The project will develop over 3 phases, each with a clear end goal.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hit Detection&lt;/strong&gt;: Get the target to register hits from all ranges, returning this information to the player by activating an LED and playing a sound.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Moving Target&lt;/strong&gt;: Get the target to move on its rail, either erratically or on a set path, depending on mode selection.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cheat Mode&lt;/strong&gt;: Using a Pi-camera, enable motion detection so that the target follows the direction in which the gun is aiming, guaranteeing a 100% hit (on the x-plane).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The reason why making the target move is a step in itself, is that the motor I have is rather big, and requires a little bit of extra work to get going. As it draws about 3A, I can’t power it straight through the Pi and need to build an H-bridge with some beefy transistors.&lt;/p&gt;
+
+&lt;h3 id=&quot;physical-assembly&quot;&gt;Physical Assembly&lt;/h3&gt;
+
+&lt;p&gt;The principle behind the target is quite simple, and uses a flat piece of material (in this iteration, cardboard) as the contact surface. Upon contact, it hinges back and presses in a button, and subsequently bends back to its initial state. Cardboard is an excellent material to start with since it has some natural elasticity when you bend it. All I had to do to keep it in line with the button-board was tie a piece of string  to keep it in place.&lt;/p&gt;
+
+&lt;p&gt;The hit is registered through the button, which is pressed down when the first piece of card is hit with enough force. It is possible to strike the target anywhere except for the very bottom (approx 1cm), and the button will register a hit.&lt;/p&gt;
+
+&lt;p&gt;Mounted to the side of the target are 3 LEDs, which light up one by one as the target is struck. These are wired in parallel, and each have a 100k current limiting resistor.&lt;/p&gt;
+
+&lt;h3 id=&quot;wiring&quot;&gt;Wiring&lt;/h3&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;p&gt;Now that the initial physical component is functional, we need some software to make sense of what exactly is supposed to happen here.&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pygame&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;# Initialise Pi IO Pins
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setmode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BCM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#Button pin
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;IN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pull_up_down&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PUD_UP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#LED Pins
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lights&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lights&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#Wait parameter, set to 5ms
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.05&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#Load audio files
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pygame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pygame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mixer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;hitsound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pygame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mixer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ding2.wav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;winsound&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pygame&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mixer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'russia2.wav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;button_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;#if button gets pressed, do this
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#turn on one additional LED
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lights&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#Hit sound    
+&lt;/span&gt;        &lt;span class=&quot;n&quot;&gt;hitsound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;   
+        &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Score is: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;you win&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;winsound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;   
+
+        &lt;span class=&quot;c1&quot;&gt;#celebratory LED display
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lights&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lights&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Todo&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;images&lt;/li&gt;
+  &lt;li&gt;schematics&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Programming" /><category term="Raspberry" /><category term="DIY" /><summary type="html">Something something clint eastwood</summary></entry><entry><title type="html">Riddle: Three Deck Monté</title><link href="http://localhost:4000/2019/02/02/threecardmonte/" rel="alternate" type="text/html" title="Riddle: Three Deck Monté" /><published>2019-02-02T00:00:00+01:00</published><updated>2019-02-02T00:00:00+01:00</updated><id>http://localhost:4000/2019/02/02/threecardmonte</id><content type="html" xml:base="http://localhost:4000/2019/02/02/threecardmonte/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/37bNTq2.jpg&quot; alt=&quot;three-card-monte&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Never trust a man in a tracksuit.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;This is another solution attempt to a riddle originally posted on &lt;a href=&quot;https://FiveThirtyEight.com&quot;&gt;FiveThirtyEight&lt;/a&gt; &lt;a href=&quot;https://fivethirtyeight.com/features/can-you-escape-a-maze-without-walls/&quot;&gt;here&lt;/a&gt;. This time, about a three-&lt;em&gt;deck&lt;/em&gt;-monte problem. Image credits to the painter of the above work, &lt;a href=&quot;http://www.maxginsburg.com/&quot;&gt;Max Ginsburg&lt;/a&gt; who does some excellent job of capturing life in New York City over the course of the last decades.&lt;/p&gt;
@@ -44,11 +156,16 @@ Tabulating possible outcomes reveals that the decks are selected very specifical
 &lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/wrCC2B6.png&quot; alt=&quot;Best-Responses&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Monté’s best responses highlighted to each deck choice are outlined in red. W/L is shown from Player’s perspective.&lt;/p&gt;
 
-&lt;p&gt;What is especially poignant about the&lt;/p&gt;
-
 &lt;h3 id=&quot;solution-attempt&quot;&gt;Solution attempt&lt;/h3&gt;
 
-&lt;p&gt;For the full code, as well as a snippet to generate a histogram, see my &lt;a href=&quot;https://github.com/denzilly/riddles&quot;&gt;github page&lt;/a&gt;.&lt;/p&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Programming" /><summary type="html">Never trust a man in a tracksuit.</summary></entry><entry><title type="html">Myanmar Metals: A Promising Look</title><link href="http://localhost:4000/2019/01/28/Myanmarmetals/" rel="alternate" type="text/html" title="Myanmar Metals: A Promising Look " /><published>2019-01-28T00:00:00+01:00</published><updated>2019-01-28T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/28/Myanmarmetals</id><content type="html" xml:base="http://localhost:4000/2019/01/28/Myanmarmetals/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/4npodS6.jpg&quot; alt=&quot;martian&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Similar to riddles we’ve solved in the past, this solution attempt is based around simply simulating the game a significant number of times in order to estimate the chance that one player will win.&lt;/p&gt;
+
+&lt;p&gt;At 1 million iterations, we estimate the player to win 298027 times. We thus estimate the victory probability to be &lt;code class=&quot;MathJax_Preview&quot;&gt;29.8027% \pm 0.00118&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;29.8027% \pm 0.00118&lt;/script&gt;  with a 99% confidence interval.&lt;/p&gt;
+
+&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/t0skFB5.png&quot; alt=&quot;Win-Probability&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Estimating the probability of victory.&lt;/p&gt;
+
+&lt;p&gt;For the full code, as well as a snippet to generate the graph, see my &lt;a href=&quot;https://github.com/denzilly/riddles&quot;&gt;github page&lt;/a&gt;.&lt;/p&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Programming" /><summary type="html">Never trust a man in a tracksuit.</summary></entry><entry><title type="html">Myanmar Metals: A Promising Look</title><link href="http://localhost:4000/2019/01/28/Myanmarmetals/" rel="alternate" type="text/html" title="Myanmar Metals: A Promising Look " /><published>2019-01-28T00:00:00+01:00</published><updated>2019-01-28T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/28/Myanmarmetals</id><content type="html" xml:base="http://localhost:4000/2019/01/28/Myanmarmetals/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;https://i.imgur.com/4npodS6.jpg&quot; alt=&quot;martian&quot; /&gt;&lt;/p&gt;
 &lt;p style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;All my makerbots are broken&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This is a solution attempt to a riddle originally posted on &lt;a href=&quot;https://FiveThirtyEight.com&quot;&gt;FiveThirtyEight&lt;/a&gt; &lt;a href=&quot;https://fivethirtyeight.com/features/in-space-no-one-can-hear-your-3d-printer-die/&quot;&gt;here&lt;/a&gt;. I recently discovered their weekly “riddlers”, and really enjoyed trying to figure this one out!&lt;/p&gt;
 
