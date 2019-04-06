@@ -35,7 +35,7 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-<meta name="description" content="
+<meta name="description" content="&lt;iframe width=”700” height=”600” style=”border: 0; top: 0; left: 0; src=”https://streamable.com/awobp” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;
 Something something clint eastwood
 
 ">
@@ -43,12 +43,12 @@ Something something clint eastwood
 
 
 
-<link rel="canonical" href="http://localhost:4000/2019/04/02/Pitarget/">
+<link rel="canonical" href="https://denzilly.github.io/2019/04/02/Pitarget/">
 
-<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="https://denzilly.github.io/feed.xml">
 
 
-  <link rel="prev" href="http://localhost:4000/2019/02/02/threecardmonte/">
+  <link rel="prev" href="https://denzilly.github.io/2019/02/02/threecardmonte/">
 
 
 
@@ -206,15 +206,20 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
   </header>
 
   
-    <p align="middle"><img src="http://picture" alt="Pitarget-mkI" /></p>
+    <p align="middle">&lt;iframe width=”700” height=”600” style=”border: 0; top: 0; left: 0; src=”https://streamable.com/awobp” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;</p>
 <p><em>Something something clint eastwood</em></p>
 
 <p>As a notorious impulse buyer, I need to periodically satisfy my capitalist urges by throwing some money at senseless gadgets. Rather than approach the subject with any sort of trepidation whatsoever, I try instead to keep the financial damage to a minimum by sticking to the dollar store, or everyone’s favourite Chinese megacorporation, Alibaba. Enter, my latest acquisition:</p>
 
-<p align="middle"><img src="http://picture" alt="Gun" /></p>
+<p align="middle"><img src="https://i.imgur.com/CXAVxRG.jpg" alt="Gun" /></p>
 <p><em>Thanks, (Jack) Ma’!</em></p>
 
-<p>Now, I’m not much of a gun fanatic at all, but I do love a good skills challenge, and quickly ran out of things to shoot in my apartment. Having overcome my apartment’s most threatening nemesis, <em>crack between ceiling and lamp</em>, I knew I needed to up the ante. Simultaneously, this seemed like the perfect opportunity to put my Raspberry Pi to work, seeing as how it was gathering dust at an alarming rate.</p>
+<p>Now, I’m not much of a gun fanatic at all, but I do love a good skills challenge, and quickly ran out of things to shoot in my apartment. Having overcome my apartment’s most threatening nemesis, <em>crack between ceiling and lamp</em>, I knew I needed to up the ante.</p>
+
+<p align="middle"><img src="https://i.imgur.com/J6BqPQf.jpg" alt="Lamp" width="50%" /></p>
+<p><em>You may not like it, but this is what peak marksmanship looks like.</em></p>
+
+<p>Simultaneously, this seemed like the perfect opportunity to put my Raspberry Pi to work, seeing as how it was gathering dust at an alarming rate.</p>
 
 <h3 id="the-pitarget">The PiTarget™</h3>
 
@@ -240,17 +245,23 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
 
 <h3 id="physical-assembly">Physical Assembly</h3>
 
-<p>The principle behind the target is quite simple, and uses a flat piece of material (in this iteration, cardboard) as the contact surface. Upon contact, it hinges back and presses in a button, and subsequently bends back to its initial state. Cardboard is an excellent material to start with since it has some natural elasticity when you bend it. All I had to do to keep it in line with the button-board was tie a piece of string  to keep it in place.</p>
+<p>The principle behind the target is quite simple, and uses a flat piece of material (in this iteration, cardboard) as the contact surface. Upon contact, it hinges back and presses in a button, and subsequently bends back to its initial state. Cardboard is an excellent material to start with since it has some natural elasticity when you bend it. All I had to do to keep it in line with the button-board was tie a piece of string  to keep it in place. Once I’ve worked out all of the kinks, I plan to 3D print out my own little carriage to spec.</p>
+
+<p align="middle"><img src="https://i.imgur.com/nwXVksD.jpg" alt="Assembly" /></p>
 
 <p>The hit is registered through the button, which is pressed down when the first piece of card is hit with enough force. It is possible to strike the target anywhere except for the very bottom (approx 1cm), and the button will register a hit.</p>
 
-<p>Mounted to the side of the target are 3 LEDs, which light up one by one as the target is struck. These are wired in parallel, and each have a 100k current limiting resistor.</p>
+<p>Mounted to the side of the target are 3 LEDs, which light up one by one as the target is struck. These are wired in parallel, and each have a 100ohm current limiting resistor.</p>
 
 <h3 id="wiring">Wiring</h3>
 
+<p align="middle"><img src="https://i.imgur.com/INHblpp.png" alt="schematic" /></p>
+
+<p>The wiring is done as follows, and is very simple. Each of the LEDs is preceded by a 100ohm resistor, and goes to one of the Pi’s GPIO pins–same goes for the button. A python script then allows us to send a signal from either of the pins to the LED, each time the button is pressed.</p>
+
 <h3 id="software">Software</h3>
 
-<p>Now that the initial physical component is functional, we need some software to make sense of what exactly is supposed to happen here.</p>
+<p>We need some software to make sense of what exactly is supposed to happen here. The core consists of a while loop that waits for the button to be pressed, and then adds a point when this happens, as well as play a sound. When the button has been hit 3 times, the game is over and the LEDs perform a celebratory display. The enclosed comments provide details as to what is happening at each step.</p>
 
 <div class="language-py highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="k">as</span> <span class="n">GPIO</span>
 <span class="kn">import</span> <span class="nn">time</span>
@@ -276,7 +287,7 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
 </span><span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
 <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
 <span class="n">hitsound</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s">'ding2.wav'</span><span class="p">)</span>
-<span class="n">winsound</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s">'russia2.wav'</span><span class="p">)</span>
+<span class="n">winsound</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">mixer</span><span class="o">.</span><span class="n">Sound</span><span class="p">(</span><span class="s">'rocky.wav'</span><span class="p">)</span>
 
 
 
@@ -314,11 +325,7 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
         <span class="k">break</span>
 </code></pre></div></div>
 
-<p>Todo</p>
-<ul>
-  <li>images</li>
-  <li>schematics</li>
-</ul>
+<h3 id="video">Video</h3>
 
   
 
@@ -457,11 +464,11 @@ and things I generally find interesting to write about. If you have any question
 
 
 <li class="h4">
-  <a href="/2019/01/28/Myanmarmetals/" data-flip="title">
-    <span>Myanmar Metals: A Promising Look </span>
+  <a href="/2019/01/14/marssurvival/" data-flip="title">
+    <span>Riddle: Surviving on Mars</span>
   </a>
-  <small><time datetime="2019-01-28T00:00:00+01:00">
-    28 Jan 2019
+  <small><time datetime="2019-01-14T00:00:00+01:00">
+    14 Jan 2019
   </time></small>
 </li>
 
@@ -473,11 +480,11 @@ and things I generally find interesting to write about. If you have any question
 
 
 <li class="h4">
-  <a href="/2019/01/22/pimotor/" data-flip="title">
-    <span>Riddle: Surviving on Mars</span>
+  <a href="/2019/01/08/Slayerpart3/" data-flip="title">
+    <span>Slaying the Top 2000 Part 3: reCAPTCHA</span>
   </a>
-  <small><time datetime="2019-01-22T00:00:00+01:00">
-    22 Jan 2019
+  <small><time datetime="2019-01-08T00:00:00+01:00">
+    08 Jan 2019
   </time></small>
 </li>
 
@@ -497,7 +504,7 @@ and things I generally find interesting to write about. If you have any question
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Raspberry Pi Nerf Target - Part 1: Hit-Detection",this.page.identifier="/2019/04/02/Pitarget",this.page.url="http://localhost:4000/2019/04/02/Pitarget/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Raspberry Pi Nerf Target - Part 1: Hit-Detection",this.page.identifier="/2019/04/02/Pitarget",this.page.url="https://denzilly.github.io/2019/04/02/Pitarget/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
@@ -540,6 +547,10 @@ and things I generally find interesting to write about. If you have any question
   
     <li>
       <a class="sidebar-nav-item" href="/blog/">Blog</a>
+    </li>
+  
+    <li>
+      <a class="sidebar-nav-item" href="/projects/">Projects</a>
     </li>
   
     <li>

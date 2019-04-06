@@ -1,17 +1,17 @@
 ---
 layout:       project
-date:         05 Aug 2017
-title:        Untitled
+date:         3/4/2019
+title:        Salade de Rameur
 caption:      A new take on salad.
 description:  >
   One-dish meal salad containing chicken, lentils, beans, sweet potato, and more.
-image:        /assets/img/projects/hyde.jpg
+#image:        /assets/img/projects/hyde.jpg
 screenshot:
-  src:        /assets/img/projects/hyde.jpg
+  src:        https://i.imgur.com/6UJd9LO.png
   srcset:   
-    1920w:    /assets/img/projects/hyde.jpg
-    960w:     /assets/img/projects/hyde@0,5x.jpg
-    480w:     /assets/img/projects/hyde@0,25x.jpg
+    1920w:    https://i.imgur.com/BHn8ydb.jpg
+    960w:     https://i.imgur.com/rwGsK63.png
+    480w:     https://i.imgur.com/6UJd9LO.png
 
 featured:     true
 accent_color: '#268bd2'
@@ -20,9 +20,9 @@ accent_image:
   overlay:    false
 ---
 
-## Fresh Salad with Everything #workingtitle
 
-This filling salad recipe does a great job of meeting nutritional requirements, and allows for infinite tweaking to suit your needs. Drop the chicken to make it vegeterian, and it still tastes great!
+
+This filling salad recipe does a great job of meeting nutritional requirements, and allows for infinite tweaking to suit your needs. Drop the chicken to make it vegeterian, and it still tastes great! Credits to Jannis for co-creating this delicious dish.
 
 **Ingredients for 2-4**
 
