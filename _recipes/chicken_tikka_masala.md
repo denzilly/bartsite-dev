@@ -5,18 +5,12 @@ title:        Chicken Tikka Masala
 caption:      A bite of childhood
 description:  
 #image:        /assets/img/projects/hyde.jpg
-screenshot:
-  src:        https://i.imgur.com/6UJd9LO.png
-  srcset:   
-    1920w:    https://i.imgur.com/rwGsK63.jpg
-    960w:     https://i.imgur.com/rwGsK63.png
-    480w:     https://i.imgur.com/6UJd9LO.png
-
-featured:     true
-accent_color: '#268bd2'
-accent_image:
-  background: '#202020'
-  overlay:    false
+#screenshot:
+#  src:        https://i.imgur.com/6UJd9LO.png
+#  srcset:   
+#    1920w:    https://i.imgur.com/rwGsK63.jpg
+#    960w:     https://i.imgur.com/rwGsK63.png
+#    480w:     https://i.imgur.com/6UJd9LO.png
 ---
 
 This type of curry was considered sacrosanct in our family home, yet we never tried to make it ourselves for fear of the complicated process and not being able to do it justice. Recently however, I received the gift of some delicious curry powder straight from India, and believe to have managed to do an amicable job of replicating this classic! If you don't have any great curry powder on hand, you can make your own basic approximation by substituting the following whenever curry powder is mentioned in the recipe.
