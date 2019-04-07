@@ -1,7 +1,7 @@
 ---
 layout:       project
 date:         3/4/2019
-title:        Salade de Rameur
+title:        DIsh name
 caption:      A new take on salad.
 description:  >
   One-dish meal salad containing chicken, lentils, beans, sweet potato, and more.
@@ -26,14 +26,14 @@ This filling salad recipe does a great job of meeting nutritional requirements, 
 
 **Ingredients for 2-4**
 
-- 300g Lettuce of choice, leaves or shredded (multiple types is fun!)
+- 300g lettuce of choice, leaves or shredded (multiple types is fun!)
 - 300-400g chicken breast
 - 200g Kidney beans (or other)
 - 200g Lentils (soaked or pre-soaked)
 - 200g Feta
 - ~3 Medium sized sweet potatoes (enough to cover the bottom of a 40x20cm oven dish when sliced)
-- 3-4 Cloves of garlic
-- 1 Red onion
+- 3-4 cloves of garlic
+- 1 red onion
 - 250g Cherry tomatoes
 - 1/2 Cucumber
 - 1 Bell pepper
