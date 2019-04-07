@@ -8,7 +8,6 @@ tags: Programming
 ![three-card-monte](https://i.imgur.com/37bNTq2.jpg)
 {: align="middle"}
 *Never trust a man in a tracksuit.*
-
 {: style="color: gray; font-size: 80%; text-align: center;"}
 This is another solution attempt to a riddle originally posted on [FiveThirtyEight](https://FiveThirtyEight.com) [here](https://fivethirtyeight.com/features/can-you-escape-a-maze-without-walls/). This time, about a three-*deck*-monte problem. Image credits to the painter of the above work, [Max Ginsburg](http://www.maxginsburg.com/) who does some excellent job of capturing life in New York City over the course of the last decades.
 

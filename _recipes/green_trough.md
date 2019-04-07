@@ -9,7 +9,7 @@ description:  >
 screenshot:
   src:        https://i.imgur.com/6UJd9LO.png
   srcset:   
-    1920w:    https://i.imgur.com/BHn8ydb.jpg
+    1920w:    https://i.imgur.com/rwGsK63.jpg
     960w:     https://i.imgur.com/rwGsK63.png
     480w:     https://i.imgur.com/6UJd9LO.png
 

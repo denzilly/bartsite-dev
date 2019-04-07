@@ -35,20 +35,19 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-<meta name="description" content="&lt;iframe width=”700” height=”600” style=”border: 0; top: 0; left: 0; src=”https://streamable.com/awobp” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;
-Something something clint eastwood
+<meta name="description" content="
 
 ">
 
 
 
 
-<link rel="canonical" href="https://denzilly.github.io/2019/04/02/Pitarget/">
+<link rel="canonical" href="http://localhost:4000/2019/04/02/Pitarget/">
 
-<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="https://denzilly.github.io/feed.xml">
+<link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
 
 
-  <link rel="prev" href="https://denzilly.github.io/2019/02/02/threecardmonte/">
+  <link rel="prev" href="http://localhost:4000/2019/02/02/threecardmonte/">
 
 
 
@@ -206,18 +205,21 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
   </header>
 
   
-    <p align="middle">&lt;iframe width=”700” height=”600” style=”border: 0; top: 0; left: 0; src=”https://streamable.com/awobp” frameborder=”0” allowfullscreen&gt;&lt;/iframe&gt;</p>
-<p><em>Something something clint eastwood</em></p>
+    <div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/awobp/meuzbi" frameborder="0" width="100%" height="100%" allowfullscreen="" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
 
-<p>As a notorious impulse buyer, I need to periodically satisfy my capitalist urges by throwing some money at senseless gadgets. Rather than approach the subject with any sort of trepidation whatsoever, I try instead to keep the financial damage to a minimum by sticking to the dollar store, or everyone’s favourite Chinese megacorporation, Alibaba. Enter, my latest acquisition:</p>
+<p align="middle" style="color: gray; font-size: 80%; text-align: center;"><em>Something something clint eastwood</em></p>
+
+<p>As a notorious impulse buyer, I need to periodically satisfy my urges by throwing some money at senseless gadgets. Rather than approach the subject with any sort of trepidation whatsoever, I try instead to keep the financial damage to a minimum by sticking to the dollar store, or everyone’s favourite Chinese megacorporation, Alibaba. Enter, my latest acquisition:</p>
 
 <p align="middle"><img src="https://i.imgur.com/CXAVxRG.jpg" alt="Gun" /></p>
-<p><em>Thanks, (Jack) Ma’!</em></p>
+<p style="color: gray; font-size: 80%; text-align: center;"><em>Thanks, (Jack) Ma’!</em></p>
 
 <p>Now, I’m not much of a gun fanatic at all, but I do love a good skills challenge, and quickly ran out of things to shoot in my apartment. Having overcome my apartment’s most threatening nemesis, <em>crack between ceiling and lamp</em>, I knew I needed to up the ante.</p>
 
-<p align="middle"><img src="https://i.imgur.com/J6BqPQf.jpg" alt="Lamp" width="50%" /></p>
-<p><em>You may not like it, but this is what peak marksmanship looks like.</em></p>
+<div class="col-sm-2" style="width: 50%; margin-left: auto; margin-right: auto;">
+    <img src="https://i.imgur.com/J6BqPQf.jpg" alt="lamp" />
+</div>
+<p style="color: gray; font-size: 80%; text-align: center;"><em>You may not like it, but this is what peak marksmanship looks like.</em></p>
 
 <p>Simultaneously, this seemed like the perfect opportunity to put my Raspberry Pi to work, seeing as how it was gathering dust at an alarming rate.</p>
 
@@ -324,8 +326,6 @@ on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
         <span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>
         <span class="k">break</span>
 </code></pre></div></div>
-
-<h3 id="video">Video</h3>
 
   
 
@@ -504,7 +504,7 @@ and things I generally find interesting to write about. If you have any question
   <div id="disqus_thread"></div>
 
   <script>
-    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Raspberry Pi Nerf Target - Part 1: Hit-Detection",this.page.identifier="/2019/04/02/Pitarget",this.page.url="https://denzilly.github.io/2019/04/02/Pitarget/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Raspberry Pi Nerf Target - Part 1: Hit-Detection",this.page.identifier="/2019/04/02/Pitarget",this.page.url="http://localhost:4000/2019/04/02/Pitarget/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
 
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
