@@ -52,14 +52,13 @@ At last, the final test--would it hold the weight of all that dirt?
 
 With an inner dimension of 1200x800x400mm , and assuming a dirt-height of 350mm, we plan to fill the box with approximately 336L of dirt.
 
-$$
-1200mm x 800mm x 350mm = 336000000mm^3 = 336L
+1200mm x 800mm x 350mm = 336000000mm<sup>3</sup> = 336L
 
-Assuming densities of approximately 400kg/m^3 (dry) and 1000kg/m^3 (wet),
+Assuming densities of approximately 400kg/m<sup>3</sup> (dry) and 1000kg/m^3 (wet),
 
-m_{dry} = .336m^3 * 400kg/m^3  =  134.4kg
-m_{wet} = .336m^3 * 1000kg/m^3 =  336kg
-$$
+m<sub>dry</sub> = .336m<sup>3</sup> * 400kg/m<sup>3</sup>  =  134.4kg<br>
+m<sub>wet</sub> = .336m<sup>3</sup> * 1000kg/m<sup>3</sup> =  336kg
+
 
 In the end, the garden was filled with approximately 300L dirt, which it seemed to hold well. There was minimal bending of the baseboard, and it appeared for the most part to be quite sturdy. It was more important to see how it would fare in the rain however, considering the estimated doubling in mass of the dirt if completely soaked through.
 
@@ -74,9 +73,11 @@ And at last, the finished product.
 
 ![Finished-garden](https://i.imgur.com/TgtIlvZ.jpg)
 {: align="middle"}
-*1. Day 1, 2. Day 45 3. Day 55*
+*Day 1 - Day 45 - Day 55*
 {: style="color: gray; font-size: 80%; text-align: center;"}
 
-
+As you can see, I foolishly tried to restrict each plant to it's own little quadrant, but they weren't having any of it.
 
 In just 2 months, our little garden went from a patch of dirt to a gladitorial arena of vegetables fighting for sunlight, with the most successful candidates being the tomato shrubs at the back, and the zucchini plants in the front. The garden was only watered occasionally, when it was really too dry.
+
+A crucial lesson about gardening was learned along the way too--it's important to trim the leaves of the plants such that their energy is more focused towards the production of fruits/vegetables. All we had to show for this massive display of foliage was about 20 cherry tomatoes and an admittedly huge zucchini!

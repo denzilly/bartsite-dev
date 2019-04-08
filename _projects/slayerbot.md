@@ -2,9 +2,8 @@
 layout:       project
 date:         December 2018
 title:        Slayer bot - Top 2000
-caption:      So fresh and young.
-description:  >
-  This theme is so fresh and young, it's basically overpriced apple cider for the web.
+caption:      Experimenting with browser automation.
+#description:  
 #image:        /assets/img/projects/default.jpg
 screenshot:
   src:        https://i.imgur.com/pORSkk1.jpg
@@ -12,6 +11,7 @@ screenshot:
     1920w:    https://i.imgur.com/pORSkk1.jpg
     960w:     https://i.imgur.com/pORSkk1.jpg
     480w:     https://i.imgur.com/pORSkk1.jpg
+featured: false
 ---
 
 This is the project page for the Slayer bot--a little experiment in browser automation that I used to get back up to date with Selenium.

@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://denzilly.github.io/tag/hyde/</loc>
-<lastmod>2019-04-08T00:06:32+02:00</lastmod>
+<lastmod>2019-04-08T17:30:37+02:00</lastmod>
 </url>
 <url>
 <loc>https://denzilly.github.io/tag/hydejack/</loc>
-<lastmod>2019-04-08T00:06:32+02:00</lastmod>
+<lastmod>2019-04-08T17:30:37+02:00</lastmod>
 </url>
 <url>
 <loc>https://denzilly.github.io/2018/11/30/origins/</loc>
@@ -41,6 +41,10 @@
 <lastmod>2016-04-01T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>https://denzilly.github.io/projects/telecaster/</loc>
+<lastmod>2017-08-07T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>https://denzilly.github.io/projects/slayerbot/</loc>
 <lastmod>2018-12-01T00:00:00+01:00</lastmod>
 </url>
@@ -55,9 +59,6 @@
 <url>
 <loc>https://denzilly.github.io/recipes/green_trough/</loc>
 <lastmod>2019-04-03T00:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>https://denzilly.github.io/in_progress/2019-01-22-pimotor/</loc>
 </url>
 <url>
 <loc>https://denzilly.github.io/in_progress/2019-01-28-Myanmarmetals/</loc>
@@ -99,13 +100,10 @@
 <loc>https://denzilly.github.io/projects/</loc>
 </url>
 <url>
-<loc>https://denzilly.github.io/in_progress/recipe_template/</loc>
+<loc>https://denzilly.github.io/in_progress/templates/recipe_template/</loc>
 </url>
 <url>
 <loc>https://denzilly.github.io/recipes/</loc>
-</url>
-<url>
-<loc>https://denzilly.github.io/in_progress/telecaster/</loc>
 </url>
 <url>
 <loc>https://denzilly.github.io/ToDo/</loc>
@@ -114,10 +112,13 @@
 <loc>https://denzilly.github.io/assets/bower_components/html5shiv/MIT%20and%20GPL2%20licenses/</loc>
 </url>
 <url>
+<loc>https://denzilly.github.io/in_progress/inflation/</loc>
+</url>
+<url>
 <loc>https://denzilly.github.io/blog/page-2/</loc>
 </url>
 <url>
 <loc>https://denzilly.github.io/assets/icomoon/demo.html</loc>
-<lastmod>2019-04-01T11:21:59+02:00</lastmod>
+<lastmod>2019-03-30T22:35:11+01:00</lastmod>
 </url>
 </urlset>

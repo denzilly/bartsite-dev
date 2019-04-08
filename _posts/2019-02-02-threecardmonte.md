@@ -49,18 +49,16 @@ Each card is capable of being superior to either 0, 1, 2, or 3 of the possible c
 Monté's best responses highlighted to each deck choice are outlined in red. W/L is shown from Player's perspective.
 
 
-
-
 ### Solution attempt
 
 Similar to riddles we've solved in the past, this solution attempt is based around simply simulating the game a significant number of times in order to estimate the chance that one player will win.
 
-At 1 million iterations, we estimate the player to win 298027 times. We thus estimate the victory probability to be $$29.8027% \pm 0.00118$$  with a 99% confidence interval.
+At 1 million iterations, we estimate the player to win 298027 times. We thus estimate the victory probability to be $$29.8027% +/- 0.00118$$  with a 99% confidence interval.
 
 ![Win-Probability](https://i.imgur.com/t0skFB5.png)
 {: align="middle"}
 Estimating the probability of victory.
 
-
+Indeed, as theorised, the odds are stacked heavily in Monté's favour! According to an additional update from the original riddle page, the true odds of player victory are exactly $$541/1815 = .29807%$$! It seems that our simulation was a success. 
 
 For the full code, as well as a snippet to generate the graph, see my [github page](https://github.com/denzilly/riddles).
