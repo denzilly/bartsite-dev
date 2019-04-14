@@ -4,7 +4,7 @@ title: 'Raspberry Pi Nerf Target - Part 2: Controlled Movement'
 tags: Programming Raspberry DIY
 ---
 
-1. [ Movement. ](#movement)
+
 {: align="middle"}
 *Something something clint eastwood*
 {: style="color: gray; font-size: 80%; text-align: center;"}
@@ -84,7 +84,7 @@ In terms of wiring, we have two additions to the circuit, one for the motor, and
 
 ### Software
 
-Finally, we need
+The software is where it really gets interesting. 
 
 
 ~~~py
