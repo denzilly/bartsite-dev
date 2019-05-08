@@ -1,7 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-10T17:09:22+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bart Timmer</title><subtitle>Interests, projects, and nonsense.</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Raspberry Pi Nerf Target - Part 2: Controlled Movement</title><link href="http://localhost:4000/2019/04/10/Pitarget-part-2/" rel="alternate" type="text/html" title="Raspberry Pi Nerf Target - Part 2: Controlled Movement" /><published>2019-04-10T00:00:00+02:00</published><updated>2019-04-10T00:00:00+02:00</updated><id>http://localhost:4000/2019/04/10/Pitarget-part-2</id><content type="html" xml:base="http://localhost:4000/2019/04/10/Pitarget-part-2/">&lt;ol align=&quot;middle&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#movement&quot;&gt; Movement. &lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;Something something clint eastwood&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-08T16:06:59+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bart Timmer</title><subtitle>Interests, projects, and nonsense.</subtitle><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><entry><title type="html">Can you charge a smartphone using Potatoes?</title><link href="http://localhost:4000/2019/05/07/Potatoes/" rel="alternate" type="text/html" title="Can you charge a smartphone using Potatoes?" /><published>2019-05-07T00:00:00+02:00</published><updated>2019-05-07T00:00:00+02:00</updated><id>http://localhost:4000/2019/05/07/Potatoes</id><content type="html" xml:base="http://localhost:4000/2019/05/07/Potatoes/">&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;potato&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;CAPTION HERE&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;FIND A NICE PIC&lt;/p&gt;
+
+&lt;h3 id=&quot;time-travel&quot;&gt;Time-Travel&lt;/h3&gt;
+&lt;p&gt;In a whirlwind of thunder and lightning, you are sent back in time to 1619–only, unlike in &lt;em&gt;Terminator&lt;/em&gt;, you get to keep your pants on.&lt;/p&gt;
+
+&lt;p&gt;Lo and behold, you kept your smartphone too, and it has an encyclopedia app! Time to educate the locals, instill yourself as a prophet, or perhaps play the tulip markets! You pull it out, and hidden in a dark corner, start browsing only to realise any time-traveler’s worst nightmare–5% battery left.&lt;/p&gt;
+
+&lt;p&gt;You didn’t really pay attention in history class, and suddenly realise your knowledge of economics to be rather limited..but do remember something about building a potato clock, that one time you paid attention in 4th grade. Since the voltaic pile won’t be invented for another century-and-a-half, you have little choice! Would it be possible to charge a smartphone with potatoes?&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-potatoes-potate&quot;&gt;How do potatoes potate?&lt;/h3&gt;
+
+&lt;p&gt;Batteries are pretty simple in their functioning, and essentially only require 3 components: an &lt;em&gt;anode&lt;/em&gt; (-), a &lt;em&gt;cathode&lt;/em&gt;(+), and some sort of &lt;em&gt;electrolyte&lt;/em&gt; solution. Without going into great detail, the anode and cathode are two pieces of metal that react with the electrolyte. The anode (-) oxidizes, releasing two electrons, which are then snapped up by the cathode (+) through a piece of conductive material, such as a wire. This continues until the anode dissolves and the cathode corrodes, at which point the reaction will cease to continue.&lt;/p&gt;
+
+&lt;p&gt;The reason why a potato-cell works, is because the mildly acidic potato juice acts as as surprisingly decent electrolyte–all you need are two electrodes, and it will supply you with DC power.&lt;/p&gt;
+
+&lt;p align=&quot;middle&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;potato&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;CAPTION HERE&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;FIND A NICE PIC&lt;/p&gt;
+
+&lt;h3 id=&quot;charging-a-phone&quot;&gt;Charging a Phone&lt;/h3&gt;
+
+&lt;p&gt;Modern smartphones use Lithium-Ion batteries, usually with a storage capacity of around 2000-3000mAh. For the purposes of this thought experiment, we’re assuming that you have a new Galaxy s9, with a 3000mAh battery. Interestingly enough, these batteries can be charged even with very little current, as long as the charging circuit is supplied with constant 5V DC. It would be more practical however, if we could charge it within 24 hours.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;\frac{5V * 3000mah}{5V * C ma} = 24&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\frac{5V * 3000mah}{5V * C ma} = 24&lt;/script&gt; &amp;lt;\br&amp;gt;
+&lt;code class=&quot;MathJax_Preview&quot;&gt;C = 125ma&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;C = 125ma&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus, theoretically we should be able to charge the phone in 24 hours if our potato bank can supply 5V 125ma.&lt;/p&gt;
+
+&lt;h3 id=&quot;potatoes&quot;&gt;Potatoes&lt;/h3&gt;
+
+&lt;p&gt;Remembering that voltage stacks in series, and current in parallel, all we need is some quick envelope math to determine how many potatoes would be necessary to satisfy out 5V 125ma requirements.&lt;/p&gt;
+
+&lt;p&gt;Online research suggests that potatoes with zinc-copper electrodes supply a nominal voltage of approximately 0.82V, and nominal current of 1.96ma.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Voltage&lt;/em&gt;
+To get the required voltage, we simply divide &lt;code class=&quot;MathJax_Preview&quot;&gt;5V / 0.82V = 6.1&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;5V / 0.82V = 6.1&lt;/script&gt; potatoes in series, rounded up to 7.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Current&lt;/em&gt;
+To get the required current, we divide &lt;code class=&quot;MathJax_Preview&quot;&gt;125ma / 1.96ma = 63.8&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;125ma / 1.96ma = 63.8&lt;/script&gt;, rounded up to 64 parallel cells.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In the end, this means that we require 64 sets of 7 series-wired potatoes, for a grand total of 448.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Science" /><summary type="html">CAPTION HERE FIND A NICE PIC</summary></entry><entry><title type="html">Raspberry Pi Nerf Target - Part 2: Controlled Movement</title><link href="http://localhost:4000/2019/04/10/Pitarget-part-2/" rel="alternate" type="text/html" title="Raspberry Pi Nerf Target - Part 2: Controlled Movement" /><published>2019-04-10T00:00:00+02:00</published><updated>2019-04-10T00:00:00+02:00</updated><id>http://localhost:4000/2019/04/10/Pitarget-part-2</id><content type="html" xml:base="http://localhost:4000/2019/04/10/Pitarget-part-2/">&lt;p align=&quot;middle&quot; style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;Something something clint eastwood&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Welcome to the second installment of the PiTarget’s development and build. This time, we’re going to take a look at making the target move from side to side, using input from a proximity sensor to decide where to go, and to make sure that it doesn’t go too far and damage itself.
 If you haven’t read the &lt;a href=&quot;https://denzilly.github.io/2019/04/02/Pitarget-part-1/&quot;&gt;first installment&lt;/a&gt;, you can do so to get a better idea overview of the whole project. If you’re just looking to figure out the basics of the HC-SR04 proximity sensor or the L298N motor driver, then this page is all you need.&lt;/p&gt;
@@ -75,10 +114,10 @@ If you haven’t read the &lt;a href=&quot;https://denzilly.github.io/2019/04/02
 
 &lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
 
-&lt;p&gt;Finally, we need&lt;/p&gt;
+&lt;p&gt;The software is where it really gets interesting.&lt;/p&gt;
 
 &lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Programming" /><category term="Raspberry" /><category term="DIY" /><summary type="html">Movement. Something something clint eastwood</summary></entry><entry><title type="html">Raspberry Pi Nerf Target - Part 1: Hit-Detection</title><link href="http://localhost:4000/2019/04/02/Pitarget-part-1/" rel="alternate" type="text/html" title="Raspberry Pi Nerf Target - Part 1: Hit-Detection" /><published>2019-04-02T00:00:00+02:00</published><updated>2019-04-02T00:00:00+02:00</updated><id>http://localhost:4000/2019/04/02/Pitarget-part-1</id><content type="html" xml:base="http://localhost:4000/2019/04/02/Pitarget-part-1/">&lt;div style=&quot;width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;&quot;&gt;&lt;iframe src=&quot;https://streamable.com/s/awobp/meuzbi&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot; allowfullscreen=&quot;&quot; style=&quot;width: 100%; height: 100%; position: absolute;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Bart Timmer</name><email>btimmer313@gmail.com</email></author><category term="Programming" /><category term="Raspberry" /><category term="DIY" /><summary type="html">Something something clint eastwood</summary></entry><entry><title type="html">Raspberry Pi Nerf Target - Part 1: Hit-Detection</title><link href="http://localhost:4000/2019/04/02/Pitarget-part-1/" rel="alternate" type="text/html" title="Raspberry Pi Nerf Target - Part 1: Hit-Detection" /><published>2019-04-02T00:00:00+02:00</published><updated>2019-04-02T00:00:00+02:00</updated><id>http://localhost:4000/2019/04/02/Pitarget-part-1</id><content type="html" xml:base="http://localhost:4000/2019/04/02/Pitarget-part-1/">&lt;div style=&quot;width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;&quot;&gt;&lt;iframe src=&quot;https://streamable.com/s/awobp/meuzbi&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot; allowfullscreen=&quot;&quot; style=&quot;width: 100%; height: 100%; position: absolute;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p align=&quot;middle&quot; style=&quot;color: gray; font-size: 80%; text-align: center;&quot;&gt;&lt;em&gt;Something something clint eastwood&lt;/em&gt;&lt;/p&gt;
 

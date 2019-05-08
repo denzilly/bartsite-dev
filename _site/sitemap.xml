@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/tag/hyde/</loc>
-<lastmod>2019-04-10T17:09:22+02:00</lastmod>
+<lastmod>2019-05-08T16:06:59+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tag/hydejack/</loc>
-<lastmod>2019-04-10T17:09:22+02:00</lastmod>
+<lastmod>2019-05-08T16:06:59+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2018/11/30/origins/</loc>
@@ -39,6 +39,10 @@
 <url>
 <loc>http://localhost:4000/2019/04/10/Pitarget-part-2/</loc>
 <lastmod>2019-04-10T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/05/07/Potatoes/</loc>
+<lastmod>2019-05-07T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/garden/</loc>
@@ -114,6 +118,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/bower_components/html5shiv/MIT%20and%20GPL2%20licenses/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/in_progress/ideas/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/in_progress/inflation/</loc>

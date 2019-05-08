@@ -31,20 +31,25 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
 
 
 
-  <title>Blog &middot; Bart Timmer</title>
+  <title>Can you charge a smartphone using Potatoes? &middot; Bart Timmer</title>
 
 
 
-<meta name="description" content="Interests, projects, and nonsense.
+<meta name="description" content="
+CAPTION HERE
+FIND A NICE PIC
+
 ">
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/">
+<link rel="canonical" href="http://localhost:4000/2019/05/07/Potatoes/">
 
 <link rel="alternate" type="application/atom+xml" title="Bart Timmer Feed" href="http://localhost:4000/feed.xml">
 
+
+  <link rel="prev" href="http://localhost:4000/2019/04/10/Pitarget-part-2/">
 
 
 
@@ -158,14 +163,13 @@ Powered by Hydejack v6.6.1 <https://qwtel.com/hydejack/>
   <div class="fade-in">
     <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/nap.png">
       
-  
 
-<article id="post-2019/05/07/Potatoes" class="post mb6" role="article">
+<article id="post-2019/05/07/Potatoes" class="post" role="article">
   <header>
     <h1 class="post-title">
-      <a href="/2019/05/07/Potatoes/" data-flip="title">
+      
         Can you charge a smartphone using Potatoes?
-      </a>
+      
     </h1>
 
     <p class="post-date heading">
@@ -207,261 +211,180 @@ on <span>Science</span>
 <p style="color: gray; font-size: 80%; text-align: center;"><em>CAPTION HERE</em></p>
 <p>FIND A NICE PIC</p>
 
+<h3 id="time-travel">Time-Travel</h3>
+<p>In a whirlwind of thunder and lightning, you are sent back in time to 1619–only, unlike in <em>Terminator</em>, you get to keep your pants on.</p>
 
-    <p class="read-more">Continue reading <a class="heading" href="/2019/05/07/Potatoes/" data-flip="title">Can you charge a smartphone using Potatoes?</a></p>
+<p>Lo and behold, you kept your smartphone too, and it has an encyclopedia app! Time to educate the locals, instill yourself as a prophet, or perhaps play the tulip markets! You pull it out, and hidden in a dark corner, start browsing only to realise any time-traveler’s worst nightmare–5% battery left.</p>
+
+<p>You didn’t really pay attention in history class, and suddenly realise your knowledge of economics to be rather limited..but do remember something about building a potato clock, that one time you paid attention in 4th grade. Since the voltaic pile won’t be invented for another century-and-a-half, you have little choice! Would it be possible to charge a smartphone with potatoes?</p>
+
+<h3 id="how-do-potatoes-potate">How do potatoes potate?</h3>
+
+<p>Batteries are pretty simple in their functioning, and essentially only require 3 components: an <em>anode</em> (-), a <em>cathode</em>(+), and some sort of <em>electrolyte</em> solution. Without going into great detail, the anode and cathode are two pieces of metal that react with the electrolyte. The anode (-) oxidizes, releasing two electrons, which are then snapped up by the cathode (+) through a piece of conductive material, such as a wire. This continues until the anode dissolves and the cathode corrodes, at which point the reaction will cease to continue.</p>
+
+<p>The reason why a potato-cell works, is because the mildly acidic potato juice acts as as surprisingly decent electrolyte–all you need are two electrodes, and it will supply you with DC power.</p>
+
+<p align="middle"><img src="" alt="potato" /></p>
+<p style="color: gray; font-size: 80%; text-align: center;"><em>CAPTION HERE</em></p>
+<p>FIND A NICE PIC</p>
+
+<h3 id="charging-a-phone">Charging a Phone</h3>
+
+<p>Modern smartphones use Lithium-Ion batteries, usually with a storage capacity of around 2000-3000mAh. For the purposes of this thought experiment, we’re assuming that you have a new Galaxy s9, with a 3000mAh battery. Interestingly enough, these batteries can be charged even with very little current, as long as the charging circuit is supplied with constant 5V DC. It would be more practical however, if we could charge it within 24 hours.</p>
+
+<p><code class="MathJax_Preview">\frac{5V * 3000mah}{5V * C ma} = 24</code><script type="math/tex">\frac{5V * 3000mah}{5V * C ma} = 24</script> &lt;\br&gt;
+<code class="MathJax_Preview">C = 125ma</code><script type="math/tex">C = 125ma</script></p>
+
+<p>Thus, theoretically we should be able to charge the phone in 24 hours if our potato bank can supply 5V 125ma.</p>
+
+<h3 id="potatoes">Potatoes</h3>
+
+<p>Remembering that voltage stacks in series, and current in parallel, all we need is some quick envelope math to determine how many potatoes would be necessary to satisfy out 5V 125ma requirements.</p>
+
+<p>Online research suggests that potatoes with zinc-copper electrodes supply a nominal voltage of approximately 0.82V, and nominal current of 1.96ma.</p>
+
+<p><em>Voltage</em>
+To get the required voltage, we simply divide <code class="MathJax_Preview">5V / 0.82V = 6.1</code><script type="math/tex">5V / 0.82V = 6.1</script> potatoes in series, rounded up to 7.</p>
+
+<p><em>Current</em>
+To get the required current, we divide <code class="MathJax_Preview">125ma / 1.96ma = 63.8</code><script type="math/tex">125ma / 1.96ma = 63.8</script>, rounded up to 64 parallel cells.</p>
+
+<p><strong>In the end, this means that we require 64 sets of 7 series-wired potatoes, for a grand total of 448.</strong></p>
+
   
 
 </article>
 
 
+  <hr class="dingbat" />
 
 
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
   
-
-<article id="post-2019/04/10/Pitarget-part-2" class="post mb6" role="article">
-  <header>
-    <h1 class="post-title">
-      <a href="/2019/04/10/Pitarget-part-2/" data-flip="title">
-        Raspberry Pi Nerf Target - Part 2: Controlled Movement
-      </a>
-    </h1>
-
-    <p class="post-date heading">
-      <time datetime="2019-04-10T00:00:00+02:00">10 Apr 2019</time>
-      
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
-
-    </p>
-
     
-  <div class="hr" style="padding-bottom:0"></div>
-
-
-  </header>
-
   
-    <p align="middle" style="color: gray; font-size: 80%; text-align: center;"><em>Something something clint eastwood</em></p>
-
-
-    <p class="read-more">Continue reading <a class="heading" href="/2019/04/10/Pitarget-part-2/" data-flip="title">Raspberry Pi Nerf Target - Part 2: Controlled Movement</a></p>
-  
-
-</article>
-
-
-
 
   
 
-<article id="post-2019/04/02/Pitarget-part-1" class="post mb6" role="article">
-  <header>
-    <h1 class="post-title">
-      <a href="/2019/04/02/Pitarget-part-1/" data-flip="title">
-        Raspberry Pi Nerf Target - Part 1: Hit-Detection
-      </a>
-    </h1>
-
-    <p class="post-date heading">
-      <time datetime="2019-04-02T00:00:00+02:00">02 Apr 2019</time>
-      
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-on <span>Programming</span>, <span>Raspberry</span>, <span>Diy</span>
-
-    </p>
-
+  <img
+    src="/assets/img/me.png"
+    class="me"
+    alt="Bart Timmer"
+    srcset="/assets/img/me.png 1x,/assets/img/me.png 2x"
     
-  <div class="hr" style="padding-bottom:0"></div>
-
-
-  </header>
-
-  
-    <div style="width: 100%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/s/awobp/meuzbi" frameborder="0" width="100%" height="100%" allowfullscreen="" style="width: 100%; height: 100%; position: absolute;"></iframe></div>
-
-
-    <p class="read-more">Continue reading <a class="heading" href="/2019/04/02/Pitarget-part-1/" data-flip="title">Raspberry Pi Nerf Target - Part 1: Hit-Detection</a></p>
-  
-
-</article>
-
-
+  />
 
 
   
 
-<article id="post-2019/02/02/threecardmonte" class="post mb6" role="article">
-  <header>
-    <h1 class="post-title">
-      <a href="/2019/02/02/threecardmonte/" data-flip="title">
-        Riddle: Three Deck Monté
-      </a>
-    </h1>
+  <h2 class="page-title hr">
+    About
+  </h2>
 
-    <p class="post-date heading">
-      <time datetime="2019-02-02T00:00:00+01:00">02 Feb 2019</time>
-      
+  <p>I am a 25 year old economics student, and hobbyist in many things. This page documents some of my projects, activities
+and things I generally find interesting to write about. If you have any questions or inquiries, feel free to email me.</p>
 
 
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-on <span>Programming</span>
-
-    </p>
-
+  
+    <div class="sidebar-social">
+      <span class="sr-only">Social:</span>
+<ul>
+  
     
-  <div class="hr" style="padding-bottom:0"></div>
 
 
-  </header>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/denzilly" title="GitHub">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
 
   
-    <p align="middle"><img src="https://i.imgur.com/37bNTq2.jpg" alt="three-card-monte" /></p>
-<p style="color: gray; font-size: 80%; text-align: center;"><em>Never trust a man in a tracksuit.</em></p>
-<p>This is another solution attempt to a riddle originally posted on <a href="https://FiveThirtyEight.com">FiveThirtyEight</a> <a href="https://fivethirtyeight.com/features/can-you-escape-a-maze-without-walls/">here</a>. This time, about a three-<em>deck</em>-monte problem. Image credits to the painter of the above work, <a href="http://www.maxginsburg.com/">Max Ginsburg</a> who does some excellent job of capturing life in New York City over the course of the last decades.</p>
-
-
-    <p class="read-more">Continue reading <a class="heading" href="/2019/02/02/threecardmonte/" data-flip="title">Riddle: Three Deck Monté</a></p>
-  
-
-</article>
-
-
-
-
-  
-
-<article id="post-2019/01/14/marssurvival" class="post mb6" role="article">
-  <header>
-    <h1 class="post-title">
-      <a href="/2019/01/14/marssurvival/" data-flip="title">
-        Riddle: Surviving on Mars
-      </a>
-    </h1>
-
-    <p class="post-date heading">
-      <time datetime="2019-01-14T00:00:00+01:00">14 Jan 2019</time>
-      
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-on <span>Programming</span>
-
-    </p>
-
     
-  <div class="hr" style="padding-bottom:0"></div>
 
 
-  </header>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:btimmer313@gmail.com" title="Email">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
 
   
-    <p align="middle"><img src="https://i.imgur.com/4npodS6.jpg" alt="martian" /></p>
-<p style="color: gray; font-size: 80%; text-align: center;"><em>All my makerbots are broken</em></p>
-<p>This is a solution attempt to a riddle originally posted on <a href="https://FiveThirtyEight.com">FiveThirtyEight</a> <a href="https://fivethirtyeight.com/features/in-space-no-one-can-hear-your-3d-printer-die/">here</a>. I recently discovered their weekly “riddlers”, and really enjoyed trying to figure this one out!</p>
 
-
-    <p class="read-more">Continue reading <a class="heading" href="/2019/01/14/marssurvival/" data-flip="title">Riddle: Surviving on Mars</a></p>
   
 
-</article>
+  
+</ul>
+
+    </div>
+  
+</div>
+
+  </aside>
 
 
 
 
 
-<h2 class="sr-only">Pagination</h2>
-<nav class="pagination heading" role="navigation">
-  <ul>
-    <li class="pagination-item older" >
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
       
-        <a rel="next" href="/blog/page-2/">Older</a>
       
-    </li>
-    <li class="pagination-item newer" >
       
-        <span>Newer</span>
-      
-    </li>
+        
+          
+          
+    
   </ul>
-</nav>
+</aside>
 
 
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="Can you charge a smartphone using Potatoes?",this.page.identifier="/2019/05/07/Potatoes",this.page.url="http://localhost:4000/2019/05/07/Potatoes/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//bart-timmer.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
 
       
 
@@ -499,7 +422,7 @@ on <span>Programming</span>
 
   
     <li>
-      <a class="sidebar-nav-item active" href="/blog/">Blog</a>
+      <a class="sidebar-nav-item" href="/blog/">Blog</a>
     </li>
   
     <li>
